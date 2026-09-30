@@ -119,7 +119,7 @@ def main(argv=None):
     bdd.declare(*df1.input_bit_names())
     nt = node_test(bdd, df1, 0, 2)  # test indice di cella al massimo due
     draw(bdd, nt, df1.input_bit_names(),
-         "Comparatore nt(f, tau): \"indice di cella X_f <= 2\"  (Sez. 5)",
+         "Comparator nt(f, tau): \"cell index X_f <= 2\"  (Sec. 5)",
          out / "obdd_1_comparatore.png")
 
     # secondo esempio la regione certificata di un modellino con due alberi
@@ -130,7 +130,7 @@ def main(argv=None):
     declare_vars(bdd2, dforest)
     wins = win_regions(bdd2, dforest, compose_forest(bdd2, dforest))
     draw(bdd2, wins[1], dforest.input_bit_names(),
-         "Regione certificata Win_1 di un modellino (2 alberi, 1 feature)",
+         "Certified region Win_1 of a toy model (2 trees, 1 feature)",
          out / "obdd_2_win_region.png")
 
     print("figure OBDD scritte in", out)
