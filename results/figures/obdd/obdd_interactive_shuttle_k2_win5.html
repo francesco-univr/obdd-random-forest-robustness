@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8"><title>shuttle — Win_5 (k=2)</title>
+<style>
+ body{margin:0;font-family:system-ui,sans-serif;background:#fafafa}
+ #bar{padding:10px 16px;background:#222;color:#fff}
+ #bar b{font-size:16px} #bar span{opacity:.8;font-size:13px;margin-left:10px}
+ #wrap{display:flex;height:calc(100vh - 46px)}
+ svg{flex:1;background:#fff;cursor:grab}
+ #info{width:240px;padding:14px;background:#f0f0f3;border-left:1px solid #ccc;font-size:14px}
+ #info h3{margin:.2em 0} .k{color:#666}
+ .node circle{stroke:#333;stroke-width:1.5px;cursor:pointer}
+ .node:hover circle{stroke-width:3px}
+ .node text{font-size:10px;pointer-events:none}
+ .term rect{stroke:#333} .term text{font-weight:bold;font-size:13px}
+ .edge{fill:none;stroke-width:1.6px}
+ .hi{stroke:#1f77b4} .lo{stroke:#999;stroke-dasharray:5 4}
+ #legend div{margin:3px 0;font-size:13px} #legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+</style></head><body>
+<div id="bar"><b>shuttle — Win_5 (k=2)</b><span>24 nodi | regione certificata della classe 5 &nbsp;·&nbsp; trascina = pan, rotella = zoom, click nodo = info</span></div>
+<div id="wrap"><svg id="svg"></svg>
+<div id="info"><h3>Archi</h3>
+ <p><span style="color:#1f77b4">———</span> bit = 1 (high)<br>
+ <span style="color:#999">- - -</span> bit = 0 (low)<br>
+ <b>1</b> = certificato · <b>0</b> = no</p>
+ <h3>Feature (colore nodo)</h3><div id="legend"></div>
+ <h3>Nodo selezionato</h3><div id="sel" class="k">clicca un nodo…</div></div></div>
+<script>
+const D = {"title": "shuttle \u2014 Win_5 (k=2)", "subtitle": "24 nodi | regione certificata della classe 5", "feature_names": ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9"], "features_present": [0, 1, 4, 5, 7, 8], "feature_thresholds": {"0": [39.5, 52.0, 52.5, 53.5, 54.5, 56.5, 57.5, 60.5, 68.5], "1": [-815.5, -739.5, -53.0, -30.0, -29.5, -26.5, -23.5, -15.0, -8.0, 5.5, 10.5, 13.0, 19.5, 20.0, 51.5, 354.5, 2805.0], "4": [-41.0, -2.0, -1.0, 4.0, 14.0, 35.0, 45.0, 53.0], "5": [19.0, 568.5], "7": [38.5, 43.5, 73.5, 80.0, 82.0, 87.5, 88.5], "8": [1.0, 3.0, 5.0, 6.0, 23.0, 38.0, 67.0, 79.0]}, "nodes": [{"id": "n0", "var": "B_0_3", "feature": 0, "feature_name": "A1", "bit": 3, "level": 0}, {"id": "n1", "var": "B_0_2", "feature": 0, "feature_name": "A1", "bit": 2, "level": 1}, {"id": "n2", "var": "B_0_1", "feature": 0, "feature_name": "A1", "bit": 1, "level": 2}, {"id": "n3", "var": "B_0_0", "feature": 0, "feature_name": "A1", "bit": 0, "level": 3}, {"id": "n4", "var": "B_1_4", "feature": 1, "feature_name": "A2", "bit": 4, "level": 4}, {"id": "n5", "var": "B_1_3", "feature": 1, "feature_name": "A2", "bit": 3, "level": 5}, {"id": "n6", "var": "B_1_2", "feature": 1, "feature_name": "A2", "bit": 2, "level": 6}, {"id": "n7", "var": "B_1_1", "feature": 1, "feature_name": "A2", "bit": 1, "level": 7}, {"id": "n8", "var": "B_1_0", "feature": 1, "feature_name": "A2", "bit": 0, "level": 8}, {"id": "n9", "var": "B_4_3", "feature": 4, "feature_name": "A5", "bit": 3, "level": 13}, {"id": "n10", "var": "B_4_2", "feature": 4, "feature_name": "A5", "bit": 2, "level": 14}, {"id": "n11", "var": "B_7_2", "feature": 7, "feature_name": "A8", "bit": 2, "level": 22}, {"id": "n12", "var": "B_7_1", "feature": 7, "feature_name": "A8", "bit": 1, "level": 23}, {"id": "n13", "var": "B_8_3", "feature": 8, "feature_name": "A9", "bit": 3, "level": 25}, {"id": "n14", "var": "B_8_2", "feature": 8, "feature_name": "A9", "bit": 2, "level": 26}, {"id": "n15", "var": "B_8_1", "feature": 8, "feature_name": "A9", "bit": 1, "level": 27}, {"id": "n16", "var": "B_8_0", "feature": 8, "feature_name": "A9", "bit": 0, "level": 28}, {"id": "n17", "var": "B_7_0", "feature": 7, "feature_name": "A8", "bit": 0, "level": 24}, {"id": "n18", "var": "B_4_1", "feature": 4, "feature_name": "A5", "bit": 1, "level": 15}, {"id": "n19", "var": "B_4_3", "feature": 4, "feature_name": "A5", "bit": 3, "level": 13}, {"id": "n20", "var": "B_4_2", "feature": 4, "feature_name": "A5", "bit": 2, "level": 14}, {"id": "n21", "var": "B_5_1", "feature": 5, "feature_name": "A6", "bit": 1, "level": 17}, {"id": "n22", "var": "B_5_0", "feature": 5, "feature_name": "A6", "bit": 0, "level": 18}, {"id": "n23", "var": "B_4_1", "feature": 4, "feature_name": "A5", "bit": 1, "level": 15}], "edges": [{"src": "n16", "dst": "F", "branch": 0}, {"src": "n16", "dst": "T", "branch": 1}, {"src": "n15", "dst": "n16", "branch": 0}, {"src": "n15", "dst": "T", "branch": 1}, {"src": "n14", "dst": "n15", "branch": 0}, {"src": "n14", "dst": "T", "branch": 1}, {"src": "n13", "dst": "n14", "branch": 0}, {"src": "n13", "dst": "T", "branch": 1}, {"src": "n12", "dst": "n13", "branch": 0}, {"src": "n17", "dst": "n13", "branch": 0}, {"src": "n17", "dst": "F", "branch": 1}, {"src": "n12", "dst": "n17", "branch": 1}, {"src": "n11", "dst": "n12", "branch": 0}, {"src": "n11", "dst": "F", "branch": 1}, {"src": "n10", "dst": "n11", "branch": 0}, {"src": "n18", "dst": "n11", "branch": 0}, {"src": "n18", "dst": "F", "branch": 1}, {"src": "n10", "dst": "n18", "branch": 1}, {"src": "n9", "dst": "n10", "branch": 0}, {"src": "n9", "dst": "F", "branch": 1}, {"src": "n8", "dst": "n9", "branch": 0}, {"src": "n22", "dst": "F", "branch": 0}, {"src": "n22", "dst": "n11", "branch": 1}, {"src": "n21", "dst": "n22", "branch": 0}, {"src": "n21", "dst": "n11", "branch": 1}, {"src": "n20", "dst": "n21", "branch": 0}, {"src": "n23", "dst": "n21", "branch": 0}, {"src": "n23", "dst": "F", "branch": 1}, {"src": "n20", "dst": "n23", "branch": 1}, {"src": "n19", "dst": "n20", "branch": 0}, {"src": "n19", "dst": "F", "branch": 1}, {"src": "n8", "dst": "n19", "branch": 1}, {"src": "n7", "dst": "n8", "branch": 0}, {"src": "n7", "dst": "F", "branch": 1}, {"src": "n6", "dst": "n7", "branch": 0}, {"src": "n6", "dst": "F", "branch": 1}, {"src": "n5", "dst": "n6", "branch": 0}, {"src": "n5", "dst": "F", "branch": 1}, {"src": "n4", "dst": "n5", "branch": 0}, {"src": "n4", "dst": "F", "branch": 1}, {"src": "n3", "dst": "n4", "branch": 0}, {"src": "n3", "dst": "F", "branch": 1}, {"src": "n2", "dst": "n3", "branch": 0}, {"src": "n2", "dst": "F", "branch": 1}, {"src": "n1", "dst": "n2", "branch": 0}, {"src": "n1", "dst": "F", "branch": 1}, {"src": "n0", "dst": "n1", "branch": 0}, {"src": "n0", "dst": "F", "branch": 1}], "root": "n0", "n_levels": 29};
+const NS="http://www.w3.org/2000/svg", svg=document.getElementById("svg");
+const DX=90, DY=80, R=22;
+const PAL=["#378ADD","#1D9E75","#D85A30","#D4537E","#BA7517","#7F77DD","#639922","#5F5E5A"];
+const fcolor={}; D.features_present.forEach((f,i)=>fcolor[f]=PAL[i%PAL.length]);
+const byLevel={}; D.nodes.forEach(n=>{(byLevel[n.level]=byLevel[n.level]||[]).push(n)});
+const X={}, Y={};
+Object.keys(byLevel).forEach(L=>byLevel[L].forEach((n,j)=>{
+  X[n.id]=(j-(byLevel[L].length-1)/2)*DX; Y[n.id]=n.level*DY;}));
+const termY=(D.n_levels+0.6)*DY;
+const TX={F:-DX,T:DX}; const xy=id=> id=="T"||id=="F"?[TX[id],termY]:[X[id],Y[id]];
+const g=document.createElementNS(NS,"g"); svg.appendChild(g);
+function line(a,b,cls){const [x0,y0]=xy(a),[x1,y1]=xy(b);
+  const p=document.createElementNS(NS,"path");
+  p.setAttribute("d",`M${x0},${y0+R} C${x0},${(y0+y1)/2} ${x1},${(y0+y1)/2} ${x1},${y1-R}`);
+  p.setAttribute("class","edge "+cls); g.appendChild(p);}
+D.edges.forEach(e=>line(e.src,e.dst,e.branch?"hi":"lo"));
+function thr(f){const t=D.feature_thresholds[String(f)]||[];
+  return t.length? "soglie reali: "+t.join(", ") : "nessuna soglia";}
+D.nodes.forEach(n=>{const [x,y]=xy(n.id);
+  const grp=document.createElementNS(NS,"g"); grp.setAttribute("class","node");
+  grp.setAttribute("transform",`translate(${x},${y})`);
+  const c=document.createElementNS(NS,"circle"); c.setAttribute("r",R);
+  c.setAttribute("fill",fcolor[n.feature]||"#ccc"); c.setAttribute("fill-opacity","0.35"); grp.appendChild(c);
+  const t=document.createElementNS(NS,"text"); t.setAttribute("text-anchor","middle");
+  t.setAttribute("dy","4"); t.textContent=n.feature_name.slice(0,6)+" b"+n.bit; grp.appendChild(t);
+  grp.onclick=()=>{document.getElementById("sel").innerHTML=
+    `<b>${n.feature_name}</b><br><span class=k>feature #${n.feature}, bit ${n.bit}</span>`+
+    `<br>${thr(n.feature)}`+
+    `<br><span class=k>testa il bit ${n.bit} dell'indice di cella di questa feature</span>`;};
+  g.appendChild(grp);});
+const leg=document.getElementById("legend");
+D.features_present.forEach(f=>{const d=document.createElement("div");
+  d.innerHTML=`<i style="background:${fcolor[f]}"></i>${D.feature_names[f]}`; leg.appendChild(d);});
+["F","T"].forEach((tid,i)=>{const [x,y]=xy(tid);
+  const grp=document.createElementNS(NS,"g"); grp.setAttribute("class","term");
+  grp.setAttribute("transform",`translate(${x},${y})`);
+  const r=document.createElementNS(NS,"rect");
+  r.setAttribute("x",-18);r.setAttribute("y",-16);r.setAttribute("width",36);r.setAttribute("height",32);
+  r.setAttribute("fill",i?"#cdebcd":"#f3d0d0"); grp.appendChild(r);
+  const t=document.createElementNS(NS,"text");t.setAttribute("text-anchor","middle");
+  t.setAttribute("dy","5");t.textContent=i?"1":"0";grp.appendChild(t); g.appendChild(grp);});
+// pan + zoom
+let s=1,tx=420,ty=40,drag=false,px,py;
+function upd(){g.setAttribute("transform",`translate(${tx},${ty}) scale(${s})`);}
+upd();
+svg.onwheel=e=>{e.preventDefault();const f=e.deltaY<0?1.1:0.9;s*=f;upd();};
+svg.onmousedown=e=>{drag=true;px=e.clientX;py=e.clientY;svg.style.cursor="grabbing";};
+window.onmousemove=e=>{if(!drag)return;tx+=e.clientX-px;ty+=e.clientY-py;px=e.clientX;py=e.clientY;upd();};
+window.onmouseup=()=>{drag=false;svg.style.cursor="grab";};
+</script></body></html>

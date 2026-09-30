@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8"><title>new-thyroid — Win_2 (k=3)</title>
+<style>
+ body{margin:0;font-family:system-ui,sans-serif;background:#fafafa}
+ #bar{padding:10px 16px;background:#222;color:#fff}
+ #bar b{font-size:16px} #bar span{opacity:.8;font-size:13px;margin-left:10px}
+ #wrap{display:flex;height:calc(100vh - 46px)}
+ svg{flex:1;background:#fff;cursor:grab}
+ #info{width:240px;padding:14px;background:#f0f0f3;border-left:1px solid #ccc;font-size:14px}
+ #info h3{margin:.2em 0} .k{color:#666}
+ .node circle{stroke:#333;stroke-width:1.5px;cursor:pointer}
+ .node:hover circle{stroke-width:3px}
+ .node text{font-size:10px;pointer-events:none}
+ .term rect{stroke:#333} .term text{font-weight:bold;font-size:13px}
+ .edge{fill:none;stroke-width:1.6px}
+ .hi{stroke:#1f77b4} .lo{stroke:#999;stroke-dasharray:5 4}
+ #legend div{margin:3px 0;font-size:13px} #legend i{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+</style></head><body>
+<div id="bar"><b>new-thyroid — Win_2 (k=3)</b><span>50 nodi | regione certificata della classe 2 &nbsp;·&nbsp; trascina = pan, rotella = zoom, click nodo = info</span></div>
+<div id="wrap"><svg id="svg"></svg>
+<div id="info"><h3>Archi</h3>
+ <p><span style="color:#1f77b4">———</span> bit = 1 (high)<br>
+ <span style="color:#999">- - -</span> bit = 0 (low)<br>
+ <b>1</b> = certificato · <b>0</b> = no</p>
+ <h3>Feature (colore nodo)</h3><div id="legend"></div>
+ <h3>Nodo selezionato</h3><div id="sel" class="k">clicca un nodo…</div></div></div>
+<script>
+const D = {"title": "new-thyroid \u2014 Win_2 (k=3)", "subtitle": "50 nodi | regione certificata della classe 2", "feature_names": ["2", "3", "4", "5", "6"], "features_present": [0, 1, 2, 3, 4], "feature_thresholds": {"0": [95.0, 97.5, 99.5, 110.5, 137.0], "1": [3.6, 5.65, 6.6, 15.65, 16.25], "2": [1.5, 1.7, 2.6, 2.95, 3.0], "3": [0.95, 1.15, 1.6, 7.05], "4": [-0.4, 0.35, 0.65, 1.85, 4.8, 7.75, 8.6]}, "nodes": [{"id": "n0", "var": "B_0_2", "feature": 0, "feature_name": "2", "bit": 2, "level": 0}, {"id": "n1", "var": "B_0_1", "feature": 0, "feature_name": "2", "bit": 1, "level": 1}, {"id": "n2", "var": "B_1_2", "feature": 1, "feature_name": "3", "bit": 2, "level": 3}, {"id": "n3", "var": "B_1_1", "feature": 1, "feature_name": "3", "bit": 1, "level": 4}, {"id": "n4", "var": "B_2_2", "feature": 2, "feature_name": "4", "bit": 2, "level": 6}, {"id": "n5", "var": "B_4_2", "feature": 4, "feature_name": "6", "bit": 2, "level": 12}, {"id": "n6", "var": "B_2_1", "feature": 2, "feature_name": "4", "bit": 1, "level": 7}, {"id": "n7", "var": "B_2_0", "feature": 2, "feature_name": "4", "bit": 0, "level": 8}, {"id": "n8", "var": "B_1_2", "feature": 1, "feature_name": "3", "bit": 2, "level": 3}, {"id": "n9", "var": "B_1_1", "feature": 1, "feature_name": "3", "bit": 1, "level": 4}, {"id": "n10", "var": "B_1_0", "feature": 1, "feature_name": "3", "bit": 0, "level": 5}, {"id": "n11", "var": "B_2_2", "feature": 2, "feature_name": "4", "bit": 2, "level": 6}, {"id": "n12", "var": "B_1_0", "feature": 1, "feature_name": "3", "bit": 0, "level": 5}, {"id": "n13", "var": "B_2_2", "feature": 2, "feature_name": "4", "bit": 2, "level": 6}, {"id": "n14", "var": "B_2_1", "feature": 2, "feature_name": "4", "bit": 1, "level": 7}, {"id": "n15", "var": "B_2_0", "feature": 2, "feature_name": "4", "bit": 0, "level": 8}, {"id": "n16", "var": "B_3_2", "feature": 3, "feature_name": "5", "bit": 2, "level": 9}, {"id": "n17", "var": "B_3_1", "feature": 3, "feature_name": "5", "bit": 1, "level": 10}, {"id": "n18", "var": "B_4_2", "feature": 4, "feature_name": "6", "bit": 2, "level": 12}, {"id": "n19", "var": "B_4_1", "feature": 4, "feature_name": "6", "bit": 1, "level": 13}, {"id": "n20", "var": "B_4_0", "feature": 4, "feature_name": "6", "bit": 0, "level": 14}, {"id": "n21", "var": "B_3_0", "feature": 3, "feature_name": "5", "bit": 0, "level": 11}, {"id": "n22", "var": "B_4_2", "feature": 4, "feature_name": "6", "bit": 2, "level": 12}, {"id": "n23", "var": "B_4_1", "feature": 4, "feature_name": "6", "bit": 1, "level": 13}, {"id": "n24", "var": "B_4_2", "feature": 4, "feature_name": "6", "bit": 2, "level": 12}, {"id": "n25", "var": "B_4_1", "feature": 4, "feature_name": "6", "bit": 1, "level": 13}, {"id": "n26", "var": "B_4_0", "feature": 4, "feature_name": "6", "bit": 0, "level": 14}, {"id": "n27", "var": "B_3_2", "feature": 3, "feature_name": "5", "bit": 2, "level": 9}, {"id": "n28", "var": "B_3_1", "feature": 3, "feature_name": "5", "bit": 1, "level": 10}, {"id": "n29", "var": "B_3_0", "feature": 3, "feature_name": "5", "bit": 0, "level": 11}, {"id": "n30", "var": "B_4_2", "feature": 4, "feature_name": "6", "bit": 2, "level": 12}, {"id": "n31", "var": "B_4_1", "feature": 4, "feature_name": "6", "bit": 1, "level": 13}, {"id": "n32", "var": "B_2_2", "feature": 2, "feature_name": "4", "bit": 2, "level": 6}, {"id": "n33", "var": "B_2_1", "feature": 2, "feature_name": "4", "bit": 1, "level": 7}, {"id": "n34", "var": "B_2_0", "feature": 2, "feature_name": "4", "bit": 0, "level": 8}, {"id": "n35", "var": "B_3_2", "feature": 3, "feature_name": "5", "bit": 2, "level": 9}, {"id": "n36", "var": "B_3_2", "feature": 3, "feature_name": "5", "bit": 2, "level": 9}, {"id": "n37", "var": "B_1_1", "feature": 1, "feature_name": "3", "bit": 1, "level": 4}, {"id": "n38", "var": "B_1_0", "feature": 1, "feature_name": "3", "bit": 0, "level": 5}, {"id": "n39", "var": "B_2_2", "feature": 2, "feature_name": "4", "bit": 2, "level": 6}, {"id": "n40", "var": "B_0_1", "feature": 0, "feature_name": "2", "bit": 1, "level": 1}, {"id": "n41", "var": "B_0_0", "feature": 0, "feature_name": "2", "bit": 0, "level": 2}, {"id": "n42", "var": "B_1_2", "feature": 1, "feature_name": "3", "bit": 2, "level": 3}, {"id": "n43", "var": "B_1_1", "feature": 1, "feature_name": "3", "bit": 1, "level": 4}, {"id": "n44", "var": "B_1_0", "feature": 1, "feature_name": "3", "bit": 0, "level": 5}, {"id": "n45", "var": "B_2_2", "feature": 2, "feature_name": "4", "bit": 2, "level": 6}, {"id": "n46", "var": "B_3_2", "feature": 3, "feature_name": "5", "bit": 2, "level": 9}, {"id": "n47", "var": "B_4_2", "feature": 4, "feature_name": "6", "bit": 2, "level": 12}, {"id": "n48", "var": "B_2_2", "feature": 2, "feature_name": "4", "bit": 2, "level": 6}, {"id": "n49", "var": "B_3_2", "feature": 3, "feature_name": "5", "bit": 2, "level": 9}], "edges": [{"src": "n5", "dst": "F", "branch": 0}, {"src": "n5", "dst": "T", "branch": 1}, {"src": "n4", "dst": "n5", "branch": 0}, {"src": "n7", "dst": "n5", "branch": 0}, {"src": "n7", "dst": "F", "branch": 1}, {"src": "n6", "dst": "n7", "branch": 0}, {"src": "n6", "dst": "F", "branch": 1}, {"src": "n4", "dst": "n6", "branch": 1}, {"src": "n3", "dst": "n4", "branch": 0}, {"src": "n3", "dst": "F", "branch": 1}, {"src": "n2", "dst": "n3", "branch": 0}, {"src": "n2", "dst": "F", "branch": 1}, {"src": "n1", "dst": "n2", "branch": 0}, {"src": "n11", "dst": "T", "branch": 0}, {"src": "n11", "dst": "n6", "branch": 1}, {"src": "n10", "dst": "n11", "branch": 0}, {"src": "n10", "dst": "n4", "branch": 1}, {"src": "n9", "dst": "n10", "branch": 0}, {"src": "n18", "dst": "F", "branch": 0}, {"src": "n19", "dst": "F", "branch": 0}, {"src": "n20", "dst": "T", "branch": 0}, {"src": "n20", "dst": "F", "branch": 1}, {"src": "n19", "dst": "n20", "branch": 1}, {"src": "n18", "dst": "n19", "branch": 1}, {"src": "n17", "dst": "n18", "branch": 0}, {"src": "n21", "dst": "n18", "branch": 0}, {"src": "n22", "dst": "F", "branch": 0}, {"src": "n23", "dst": "F", "branch": 0}, {"src": "n23", "dst": "T", "branch": 1}, {"src": "n22", "dst": "n23", "branch": 1}, {"src": "n21", "dst": "n22", "branch": 1}, {"src": "n17", "dst": "n21", "branch": 1}, {"src": "n16", "dst": "n17", "branch": 0}, {"src": "n24", "dst": "F", "branch": 0}, {"src": "n26", "dst": "F", "branch": 0}, {"src": "n26", "dst": "T", "branch": 1}, {"src": "n25", "dst": "n26", "branch": 0}, {"src": "n25", "dst": "T", "branch": 1}, {"src": "n24", "dst": "n25", "branch": 1}, {"src": "n16", "dst": "n24", "branch": 1}, {"src": "n15", "dst": "n16", "branch": 0}, {"src": "n28", "dst": "F", "branch": 0}, {"src": "n29", "dst": "F", "branch": 0}, {"src": "n30", "dst": "F", "branch": 0}, {"src": "n31", "dst": "F", "branch": 0}, {"src": "n31", "dst": "n26", "branch": 1}, {"src": "n30", "dst": "n31", "branch": 1}, {"src": "n29", "dst": "n30", "branch": 1}, {"src": "n28", "dst": "n29", "branch": 1}, {"src": "n27", "dst": "n28", "branch": 0}, {"src": "n27", "dst": "n30", "branch": 1}, {"src": "n15", "dst": "n27", "branch": 1}, {"src": "n14", "dst": "n15", "branch": 0}, {"src": "n14", "dst": "n27", "branch": 1}, {"src": "n13", "dst": "n14", "branch": 0}, {"src": "n13", "dst": "F", "branch": 1}, {"src": "n12", "dst": "n13", "branch": 0}, {"src": "n35", "dst": "F", "branch": 0}, {"src": "n35", "dst": "n24", "branch": 1}, {"src": "n34", "dst": "n35", "branch": 0}, {"src": "n36", "dst": "F", "branch": 0}, {"src": "n36", "dst": "n30", "branch": 1}, {"src": "n34", "dst": "n36", "branch": 1}, {"src": "n33", "dst": "n34", "branch": 0}, {"src": "n33", "dst": "n36", "branch": 1}, {"src": "n32", "dst": "n33", "branch": 0}, {"src": "n32", "dst": "F", "branch": 1}, {"src": "n12", "dst": "n32", "branch": 1}, {"src": "n9", "dst": "n12", "branch": 1}, {"src": "n8", "dst": "n9", "branch": 0}, {"src": "n38", "dst": "n32", "branch": 0}, {"src": "n39", "dst": "n36", "branch": 0}, {"src": "n39", "dst": "F", "branch": 1}, {"src": "n38", "dst": "n39", "branch": 1}, {"src": "n37", "dst": "n38", "branch": 0}, {"src": "n37", "dst": "n39", "branch": 1}, {"src": "n8", "dst": "n37", "branch": 1}, {"src": "n1", "dst": "n8", "branch": 1}, {"src": "n0", "dst": "n1", "branch": 0}, {"src": "n41", "dst": "n8", "branch": 0}, {"src": "n43", "dst": "n11", "branch": 0}, {"src": "n46", "dst": "n22", "branch": 0}, {"src": "n47", "dst": "n23", "branch": 0}, {"src": "n47", "dst": "T", "branch": 1}, {"src": "n46", "dst": "n47", "branch": 1}, {"src": "n45", "dst": "n46", "branch": 0}, {"src": "n45", "dst": "F", "branch": 1}, {"src": "n44", "dst": "n45", "branch": 0}, {"src": "n49", "dst": "F", "branch": 0}, {"src": "n49", "dst": "n47", "branch": 1}, {"src": "n48", "dst": "n49", "branch": 0}, {"src": "n48", "dst": "F", "branch": 1}, {"src": "n44", "dst": "n48", "branch": 1}, {"src": "n43", "dst": "n44", "branch": 1}, {"src": "n42", "dst": "n43", "branch": 0}, {"src": "n42", "dst": "n48", "branch": 1}, {"src": "n41", "dst": "n42", "branch": 1}, {"src": "n40", "dst": "n41", "branch": 0}, {"src": "n40", "dst": "n42", "branch": 1}, {"src": "n0", "dst": "n40", "branch": 1}], "root": "n0", "n_levels": 15};
+const NS="http://www.w3.org/2000/svg", svg=document.getElementById("svg");
+const DX=90, DY=80, R=22;
+const PAL=["#378ADD","#1D9E75","#D85A30","#D4537E","#BA7517","#7F77DD","#639922","#5F5E5A"];
+const fcolor={}; D.features_present.forEach((f,i)=>fcolor[f]=PAL[i%PAL.length]);
+const byLevel={}; D.nodes.forEach(n=>{(byLevel[n.level]=byLevel[n.level]||[]).push(n)});
+const X={}, Y={};
+Object.keys(byLevel).forEach(L=>byLevel[L].forEach((n,j)=>{
+  X[n.id]=(j-(byLevel[L].length-1)/2)*DX; Y[n.id]=n.level*DY;}));
+const termY=(D.n_levels+0.6)*DY;
+const TX={F:-DX,T:DX}; const xy=id=> id=="T"||id=="F"?[TX[id],termY]:[X[id],Y[id]];
+const g=document.createElementNS(NS,"g"); svg.appendChild(g);
+function line(a,b,cls){const [x0,y0]=xy(a),[x1,y1]=xy(b);
+  const p=document.createElementNS(NS,"path");
+  p.setAttribute("d",`M${x0},${y0+R} C${x0},${(y0+y1)/2} ${x1},${(y0+y1)/2} ${x1},${y1-R}`);
+  p.setAttribute("class","edge "+cls); g.appendChild(p);}
+D.edges.forEach(e=>line(e.src,e.dst,e.branch?"hi":"lo"));
+function thr(f){const t=D.feature_thresholds[String(f)]||[];
+  return t.length? "soglie reali: "+t.join(", ") : "nessuna soglia";}
+D.nodes.forEach(n=>{const [x,y]=xy(n.id);
+  const grp=document.createElementNS(NS,"g"); grp.setAttribute("class","node");
+  grp.setAttribute("transform",`translate(${x},${y})`);
+  const c=document.createElementNS(NS,"circle"); c.setAttribute("r",R);
+  c.setAttribute("fill",fcolor[n.feature]||"#ccc"); c.setAttribute("fill-opacity","0.35"); grp.appendChild(c);
+  const t=document.createElementNS(NS,"text"); t.setAttribute("text-anchor","middle");
+  t.setAttribute("dy","4"); t.textContent=n.feature_name.slice(0,6)+" b"+n.bit; grp.appendChild(t);
+  grp.onclick=()=>{document.getElementById("sel").innerHTML=
+    `<b>${n.feature_name}</b><br><span class=k>feature #${n.feature}, bit ${n.bit}</span>`+
+    `<br>${thr(n.feature)}`+
+    `<br><span class=k>testa il bit ${n.bit} dell'indice di cella di questa feature</span>`;};
+  g.appendChild(grp);});
+const leg=document.getElementById("legend");
+D.features_present.forEach(f=>{const d=document.createElement("div");
+  d.innerHTML=`<i style="background:${fcolor[f]}"></i>${D.feature_names[f]}`; leg.appendChild(d);});
+["F","T"].forEach((tid,i)=>{const [x,y]=xy(tid);
+  const grp=document.createElementNS(NS,"g"); grp.setAttribute("class","term");
+  grp.setAttribute("transform",`translate(${x},${y})`);
+  const r=document.createElementNS(NS,"rect");
+  r.setAttribute("x",-18);r.setAttribute("y",-16);r.setAttribute("width",36);r.setAttribute("height",32);
+  r.setAttribute("fill",i?"#cdebcd":"#f3d0d0"); grp.appendChild(r);
+  const t=document.createElementNS(NS,"text");t.setAttribute("text-anchor","middle");
+  t.setAttribute("dy","5");t.textContent=i?"1":"0";grp.appendChild(t); g.appendChild(grp);});
+// pan + zoom
+let s=1,tx=420,ty=40,drag=false,px,py;
+function upd(){g.setAttribute("transform",`translate(${tx},${ty}) scale(${s})`);}
+upd();
+svg.onwheel=e=>{e.preventDefault();const f=e.deltaY<0?1.1:0.9;s*=f;upd();};
+svg.onmousedown=e=>{drag=true;px=e.clientX;py=e.clientY;svg.style.cursor="grabbing";};
+window.onmousemove=e=>{if(!drag)return;tx+=e.clientX-px;ty+=e.clientY-py;px=e.clientX;py=e.clientY;upd();};
+window.onmouseup=()=>{drag=false;svg.style.cursor="grab";};
+</script></body></html>

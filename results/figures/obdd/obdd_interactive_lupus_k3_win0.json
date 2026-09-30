@@ -1,0 +1,235 @@
+{
+ "title": "lupus \u2014 Win_0 (k=3)",
+ "subtitle": "11 nodi | regione certificata della classe 0",
+ "feature_names": [
+  "TIME",
+  "DURATION",
+  "LOG(1+DURATION)"
+ ],
+ "features_present": [
+  0,
+  1,
+  2
+ ],
+ "feature_thresholds": {
+  "0": [
+   93.0,
+   170.5
+  ],
+  "1": [
+   0.55,
+   1.5,
+   2.5,
+   7.5
+  ],
+  "2": [
+   0.395,
+   0.895,
+   2.52
+  ]
+ },
+ "nodes": [
+  {
+   "id": "n0",
+   "var": "B_0_1",
+   "feature": 0,
+   "feature_name": "TIME",
+   "bit": 1,
+   "level": 0
+  },
+  {
+   "id": "n1",
+   "var": "B_0_0",
+   "feature": 0,
+   "feature_name": "TIME",
+   "bit": 0,
+   "level": 1
+  },
+  {
+   "id": "n2",
+   "var": "B_1_2",
+   "feature": 1,
+   "feature_name": "DURATION",
+   "bit": 2,
+   "level": 2
+  },
+  {
+   "id": "n3",
+   "var": "B_1_1",
+   "feature": 1,
+   "feature_name": "DURATION",
+   "bit": 1,
+   "level": 3
+  },
+  {
+   "id": "n4",
+   "var": "B_1_0",
+   "feature": 1,
+   "feature_name": "DURATION",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n5",
+   "var": "B_2_1",
+   "feature": 2,
+   "feature_name": "LOG(1+DURATION)",
+   "bit": 1,
+   "level": 5
+  },
+  {
+   "id": "n6",
+   "var": "B_2_0",
+   "feature": 2,
+   "feature_name": "LOG(1+DURATION)",
+   "bit": 0,
+   "level": 6
+  },
+  {
+   "id": "n7",
+   "var": "B_1_2",
+   "feature": 1,
+   "feature_name": "DURATION",
+   "bit": 2,
+   "level": 2
+  },
+  {
+   "id": "n8",
+   "var": "B_1_1",
+   "feature": 1,
+   "feature_name": "DURATION",
+   "bit": 1,
+   "level": 3
+  },
+  {
+   "id": "n9",
+   "var": "B_1_0",
+   "feature": 1,
+   "feature_name": "DURATION",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n10",
+   "var": "B_1_2",
+   "feature": 1,
+   "feature_name": "DURATION",
+   "bit": 2,
+   "level": 2
+  }
+ ],
+ "edges": [
+  {
+   "src": "n4",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n5",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n6",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n6",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n5",
+   "dst": "n6",
+   "branch": 1
+  },
+  {
+   "src": "n4",
+   "dst": "n5",
+   "branch": 1
+  },
+  {
+   "src": "n3",
+   "dst": "n4",
+   "branch": 0
+  },
+  {
+   "src": "n3",
+   "dst": "n5",
+   "branch": 1
+  },
+  {
+   "src": "n2",
+   "dst": "n3",
+   "branch": 0
+  },
+  {
+   "src": "n2",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n1",
+   "dst": "n2",
+   "branch": 0
+  },
+  {
+   "src": "n9",
+   "dst": "n5",
+   "branch": 0
+  },
+  {
+   "src": "n9",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n8",
+   "dst": "n9",
+   "branch": 0
+  },
+  {
+   "src": "n8",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n7",
+   "dst": "n8",
+   "branch": 0
+  },
+  {
+   "src": "n7",
+   "dst": "n5",
+   "branch": 1
+  },
+  {
+   "src": "n1",
+   "dst": "n7",
+   "branch": 1
+  },
+  {
+   "src": "n0",
+   "dst": "n1",
+   "branch": 0
+  },
+  {
+   "src": "n10",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n10",
+   "dst": "n5",
+   "branch": 1
+  },
+  {
+   "src": "n0",
+   "dst": "n10",
+   "branch": 1
+  }
+ ],
+ "root": "n0",
+ "n_levels": 7
+}

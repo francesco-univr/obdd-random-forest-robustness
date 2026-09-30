@@ -1,0 +1,590 @@
+{
+ "title": "heart-h \u2014 Win_0 (k=2)",
+ "subtitle": "29 nodi | regione certificata della classe 0",
+ "feature_names": [
+  "age",
+  "sex",
+  "chest_pain",
+  "trestbps",
+  "chol",
+  "fbs",
+  "restecg",
+  "thalach",
+  "exang",
+  "oldpeak",
+  "slope",
+  "ca",
+  "thal"
+ ],
+ "features_present": [
+  0,
+  1,
+  2,
+  4,
+  7,
+  8,
+  9,
+  10
+ ],
+ "feature_thresholds": {
+  "0": [
+   48.5,
+   53.5
+  ],
+  "1": [
+   0.5
+  ],
+  "2": [
+   0.5,
+   1.5
+  ],
+  "4": [
+   55.0,
+   69.5,
+   151.0
+  ],
+  "7": [
+   24.5,
+   36.5
+  ],
+  "8": [
+   1.5
+  ],
+  "9": [
+   0.5,
+   1.25
+  ],
+  "10": [
+   1.0,
+   2.5
+  ]
+ },
+ "nodes": [
+  {
+   "id": "n0",
+   "var": "B_0_1",
+   "feature": 0,
+   "feature_name": "age",
+   "bit": 1,
+   "level": 0
+  },
+  {
+   "id": "n1",
+   "var": "B_1_0",
+   "feature": 1,
+   "feature_name": "sex",
+   "bit": 0,
+   "level": 2
+  },
+  {
+   "id": "n2",
+   "var": "B_2_1",
+   "feature": 2,
+   "feature_name": "chest_pain",
+   "bit": 1,
+   "level": 3
+  },
+  {
+   "id": "n3",
+   "var": "B_2_0",
+   "feature": 2,
+   "feature_name": "chest_pain",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n4",
+   "var": "B_4_1",
+   "feature": 4,
+   "feature_name": "chol",
+   "bit": 1,
+   "level": 6
+  },
+  {
+   "id": "n5",
+   "var": "B_7_1",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 1,
+   "level": 8
+  },
+  {
+   "id": "n6",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 0,
+   "level": 9
+  },
+  {
+   "id": "n7",
+   "var": "B_9_1",
+   "feature": 9,
+   "feature_name": "oldpeak",
+   "bit": 1,
+   "level": 11
+  },
+  {
+   "id": "n8",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "oldpeak",
+   "bit": 0,
+   "level": 12
+  },
+  {
+   "id": "n9",
+   "var": "B_7_1",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 1,
+   "level": 8
+  },
+  {
+   "id": "n10",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 0,
+   "level": 9
+  },
+  {
+   "id": "n11",
+   "var": "B_9_1",
+   "feature": 9,
+   "feature_name": "oldpeak",
+   "bit": 1,
+   "level": 11
+  },
+  {
+   "id": "n12",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "oldpeak",
+   "bit": 0,
+   "level": 12
+  },
+  {
+   "id": "n13",
+   "var": "B_10_1",
+   "feature": 10,
+   "feature_name": "slope",
+   "bit": 1,
+   "level": 13
+  },
+  {
+   "id": "n14",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "slope",
+   "bit": 0,
+   "level": 14
+  },
+  {
+   "id": "n15",
+   "var": "B_4_1",
+   "feature": 4,
+   "feature_name": "chol",
+   "bit": 1,
+   "level": 6
+  },
+  {
+   "id": "n16",
+   "var": "B_7_1",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 1,
+   "level": 8
+  },
+  {
+   "id": "n17",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 0,
+   "level": 9
+  },
+  {
+   "id": "n18",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "exang",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n19",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "exang",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n20",
+   "var": "B_7_1",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 1,
+   "level": 8
+  },
+  {
+   "id": "n21",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 0,
+   "level": 9
+  },
+  {
+   "id": "n22",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "exang",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n23",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "exang",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n24",
+   "var": "B_2_1",
+   "feature": 2,
+   "feature_name": "chest_pain",
+   "bit": 1,
+   "level": 3
+  },
+  {
+   "id": "n25",
+   "var": "B_2_0",
+   "feature": 2,
+   "feature_name": "chest_pain",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n26",
+   "var": "B_4_1",
+   "feature": 4,
+   "feature_name": "chol",
+   "bit": 1,
+   "level": 6
+  },
+  {
+   "id": "n27",
+   "var": "B_7_1",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 1,
+   "level": 8
+  },
+  {
+   "id": "n28",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "thalach",
+   "bit": 0,
+   "level": 9
+  }
+ ],
+ "edges": [
+  {
+   "src": "n6",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n8",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n8",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n7",
+   "dst": "n8",
+   "branch": 0
+  },
+  {
+   "src": "n7",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n6",
+   "dst": "n7",
+   "branch": 1
+  },
+  {
+   "src": "n5",
+   "dst": "n6",
+   "branch": 0
+  },
+  {
+   "src": "n5",
+   "dst": "n7",
+   "branch": 1
+  },
+  {
+   "src": "n4",
+   "dst": "n5",
+   "branch": 0
+  },
+  {
+   "src": "n10",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n14",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n14",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n13",
+   "dst": "n14",
+   "branch": 0
+  },
+  {
+   "src": "n13",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n12",
+   "dst": "n13",
+   "branch": 0
+  },
+  {
+   "src": "n12",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n11",
+   "dst": "n12",
+   "branch": 0
+  },
+  {
+   "src": "n11",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n10",
+   "dst": "n11",
+   "branch": 1
+  },
+  {
+   "src": "n9",
+   "dst": "n10",
+   "branch": 0
+  },
+  {
+   "src": "n9",
+   "dst": "n11",
+   "branch": 1
+  },
+  {
+   "src": "n4",
+   "dst": "n9",
+   "branch": 1
+  },
+  {
+   "src": "n3",
+   "dst": "n4",
+   "branch": 0
+  },
+  {
+   "src": "n18",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n18",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n17",
+   "dst": "n18",
+   "branch": 0
+  },
+  {
+   "src": "n19",
+   "dst": "n7",
+   "branch": 0
+  },
+  {
+   "src": "n19",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n17",
+   "dst": "n19",
+   "branch": 1
+  },
+  {
+   "src": "n16",
+   "dst": "n17",
+   "branch": 0
+  },
+  {
+   "src": "n16",
+   "dst": "n19",
+   "branch": 1
+  },
+  {
+   "src": "n15",
+   "dst": "n16",
+   "branch": 0
+  },
+  {
+   "src": "n22",
+   "dst": "n13",
+   "branch": 0
+  },
+  {
+   "src": "n22",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n21",
+   "dst": "n22",
+   "branch": 0
+  },
+  {
+   "src": "n23",
+   "dst": "n11",
+   "branch": 0
+  },
+  {
+   "src": "n23",
+   "dst": "n13",
+   "branch": 1
+  },
+  {
+   "src": "n21",
+   "dst": "n23",
+   "branch": 1
+  },
+  {
+   "src": "n20",
+   "dst": "n21",
+   "branch": 0
+  },
+  {
+   "src": "n20",
+   "dst": "n23",
+   "branch": 1
+  },
+  {
+   "src": "n15",
+   "dst": "n20",
+   "branch": 1
+  },
+  {
+   "src": "n3",
+   "dst": "n15",
+   "branch": 1
+  },
+  {
+   "src": "n2",
+   "dst": "n3",
+   "branch": 0
+  },
+  {
+   "src": "n2",
+   "dst": "n15",
+   "branch": 1
+  },
+  {
+   "src": "n1",
+   "dst": "n2",
+   "branch": 0
+  },
+  {
+   "src": "n25",
+   "dst": "n4",
+   "branch": 0
+  },
+  {
+   "src": "n28",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n28",
+   "dst": "n19",
+   "branch": 1
+  },
+  {
+   "src": "n27",
+   "dst": "n28",
+   "branch": 0
+  },
+  {
+   "src": "n27",
+   "dst": "n19",
+   "branch": 1
+  },
+  {
+   "src": "n26",
+   "dst": "n27",
+   "branch": 0
+  },
+  {
+   "src": "n26",
+   "dst": "n20",
+   "branch": 1
+  },
+  {
+   "src": "n25",
+   "dst": "n26",
+   "branch": 1
+  },
+  {
+   "src": "n24",
+   "dst": "n25",
+   "branch": 0
+  },
+  {
+   "src": "n24",
+   "dst": "n26",
+   "branch": 1
+  },
+  {
+   "src": "n1",
+   "dst": "n24",
+   "branch": 1
+  },
+  {
+   "src": "n0",
+   "dst": "n1",
+   "branch": 0
+  },
+  {
+   "src": "n0",
+   "dst": "n2",
+   "branch": 1
+  }
+ ],
+ "root": "n0",
+ "n_levels": 16
+}

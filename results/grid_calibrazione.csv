@@ -1,0 +1,496 @@
+dataset,n_trees,n_trees_full,budget,selector,backend,completed,error,n_input_bits,peak_nodes,n_leaves,runtime_s
+ann-thyroid,5,100,1000,infogain,autoref,True,,39,7091,14843,45.969
+ann-thyroid,10,100,1000,infogain,autoref,False,timeout dopo 60.0s,45,,,60.016
+ann-thyroid,5,100,1000,modal_var,autoref,True,,39,7091,218,4.656
+ann-thyroid,10,100,1000,modal_var,autoref,False,manager a 5000482 nodi > 5000000,45,,,31.047
+ann-thyroid,5,100,100000,infogain,autoref,True,,39,61519,1,0.735
+ann-thyroid,10,100,100000,infogain,autoref,False,manager a 5166546 nodi > 5000000,45,,,19.969
+ann-thyroid,5,100,100000,modal_var,autoref,True,,39,61519,1,0.734
+ann-thyroid,10,100,100000,modal_var,autoref,False,manager a 5363320 nodi > 5000000,45,,,24.86
+appendicitis,5,68,1000,infogain,autoref,True,,16,82,1,0.015
+appendicitis,10,68,1000,infogain,autoref,True,,23,1032,2,0.078
+appendicitis,20,68,1000,infogain,autoref,True,,28,1561,125,1.531
+appendicitis,68,68,1000,infogain,autoref,False,timeout dopo 60.0s,38,,,60.015
+appendicitis,5,68,1000,modal_var,autoref,True,,16,82,1,0.016
+appendicitis,10,68,1000,modal_var,autoref,True,,23,1032,2,0.078
+appendicitis,20,68,1000,modal_var,autoref,True,,28,1561,23,0.922
+appendicitis,68,68,1000,modal_var,autoref,False,manager a 5001179 nodi > 5000000,38,,,20.937
+appendicitis,5,68,100000,infogain,autoref,True,,16,82,1,0.015
+appendicitis,10,68,100000,infogain,autoref,True,,23,1032,1,0.063
+appendicitis,20,68,100000,infogain,autoref,True,,28,3865,1,0.359
+appendicitis,68,68,100000,infogain,autoref,False,manager a 5167022 nodi > 5000000,38,,,12.016
+appendicitis,5,68,100000,modal_var,autoref,True,,16,82,1,0.015
+appendicitis,10,68,100000,modal_var,autoref,True,,23,1032,1,0.062
+appendicitis,20,68,100000,modal_var,autoref,True,,28,3865,1,0.359
+appendicitis,68,68,100000,modal_var,autoref,False,manager a 5035367 nodi > 5000000,38,,,14.828
+banknote,5,44,1000,infogain,autoref,True,,21,979,1,0.063
+banknote,10,44,1000,infogain,autoref,True,,26,1737,29,0.547
+banknote,20,44,1000,infogain,autoref,True,,28,1816,317,9.171
+banknote,44,44,1000,infogain,autoref,False,timeout dopo 60.0s,32,,,60.015
+banknote,5,44,1000,modal_var,autoref,True,,21,979,1,0.063
+banknote,10,44,1000,modal_var,autoref,True,,26,1489,33,0.875
+banknote,20,44,1000,modal_var,autoref,True,,28,1620,181,9.109
+banknote,44,44,1000,modal_var,autoref,False,manager a 5000783 nodi > 5000000,32,,,20.656
+banknote,5,44,100000,infogain,autoref,True,,21,979,1,0.062
+banknote,10,44,100000,infogain,autoref,True,,26,8013,1,0.422
+banknote,20,44,100000,infogain,autoref,True,,28,32224,1,2.921
+banknote,44,44,100000,infogain,autoref,False,manager a 5096272 nodi > 5000000,32,,,12.843
+banknote,5,44,100000,modal_var,autoref,True,,21,979,1,0.078
+banknote,10,44,100000,modal_var,autoref,True,,26,8013,1,0.39
+banknote,20,44,100000,modal_var,autoref,True,,28,32224,1,2.969
+banknote,44,44,100000,modal_var,autoref,False,manager a 5022061 nodi > 5000000,32,,,14.797
+biodegradation,5,88,1000,infogain,autoref,False,timeout dopo 60.0s,117,,,60.016
+biodegradation,5,88,1000,modal_var,autoref,False,manager a 5933371 nodi > 5000000,117,,,14.766
+biodegradation,5,88,100000,infogain,autoref,False,manager a 7641446 nodi > 5000000,117,,,19.203
+biodegradation,5,88,100000,modal_var,autoref,False,manager a 7641446 nodi > 5000000,117,,,19.203
+breast-cancer,5,64,1000,infogain,autoref,True,,15,110,1,0.016
+breast-cancer,10,64,1000,infogain,autoref,True,,19,628,1,0.062
+breast-cancer,20,64,1000,infogain,autoref,True,,20,1092,3,0.234
+breast-cancer,64,64,1000,infogain,autoref,True,,22,1386,178,14.875
+breast-cancer,5,64,1000,modal_var,autoref,True,,15,110,1,0.016
+breast-cancer,10,64,1000,modal_var,autoref,True,,19,628,1,0.062
+breast-cancer,20,64,1000,modal_var,autoref,True,,20,1092,2,0.219
+breast-cancer,64,64,1000,modal_var,autoref,True,,22,1192,35,5.062
+breast-cancer,5,64,100000,infogain,autoref,True,,15,110,1,0.016
+breast-cancer,10,64,100000,infogain,autoref,True,,19,628,1,0.047
+breast-cancer,20,64,100000,infogain,autoref,True,,20,1302,1,0.219
+breast-cancer,64,64,100000,infogain,autoref,True,,22,10787,1,3.0
+breast-cancer,5,64,100000,modal_var,autoref,True,,15,110,1,0.016
+breast-cancer,10,64,100000,modal_var,autoref,True,,19,628,1,0.047
+breast-cancer,20,64,100000,modal_var,autoref,True,,20,1302,1,0.219
+breast-cancer,64,64,100000,modal_var,autoref,True,,22,10787,1,3.063
+breast-cancer-wisconsin,5,40,1000,infogain,autoref,True,,47,8619,11458,53.329
+breast-cancer-wisconsin,10,40,1000,infogain,autoref,False,timeout dopo 60.0s,79,,,60.016
+breast-cancer-wisconsin,5,40,1000,modal_var,autoref,True,,47,8798,145,3.219
+breast-cancer-wisconsin,10,40,1000,modal_var,autoref,False,timeout dopo 60.0s,79,,,60.062
+breast-cancer-wisconsin,5,40,100000,infogain,autoref,True,,47,100418,1,1.031
+breast-cancer-wisconsin,10,40,100000,infogain,autoref,False,manager a 5047022 nodi > 5000000,79,,,18.422
+breast-cancer-wisconsin,5,40,100000,modal_var,autoref,True,,47,100418,1,0.797
+breast-cancer-wisconsin,10,40,100000,modal_var,autoref,False,manager a 6411660 nodi > 5000000,79,,,45.563
+bupa,5,98,1000,infogain,autoref,True,,28,2612,30,0.406
+bupa,10,98,1000,infogain,autoref,True,,32,2607,5406,42.719
+bupa,20,98,1000,infogain,autoref,False,timeout dopo 60.0s,35,,,60.015
+bupa,5,98,1000,modal_var,autoref,True,,28,2907,11,0.328
+bupa,10,98,1000,modal_var,autoref,True,,32,2413,214,5.922
+bupa,20,98,1000,modal_var,autoref,False,manager a 5000695 nodi > 5000000,35,,,20.25
+bupa,5,98,100000,infogain,autoref,True,,28,8760,1,0.218
+bupa,10,98,100000,infogain,autoref,True,,32,43351,1,2.015
+bupa,20,98,100000,infogain,autoref,False,manager a 5191966 nodi > 5000000,35,,,14.703
+bupa,5,98,100000,modal_var,autoref,True,,28,8760,1,0.203
+bupa,10,98,100000,modal_var,autoref,True,,32,43351,1,1.86
+bupa,20,98,100000,modal_var,autoref,False,manager a 5254717 nodi > 5000000,35,,,20.156
+cloud,5,44,1000,infogain,autoref,True,,28,3824,1082,6.641
+cloud,10,44,1000,infogain,autoref,False,timeout dopo 60.0s,33,,,60.016
+cloud,5,44,1000,modal_var,autoref,True,,28,4067,66,1.672
+cloud,10,44,1000,modal_var,autoref,False,manager a 5001762 nodi > 5000000,33,,,44.5
+cloud,5,44,100000,infogain,autoref,True,,28,68226,1,0.968
+cloud,10,44,100000,infogain,autoref,False,manager a 5018268 nodi > 5000000,33,,,19.485
+cloud,5,44,100000,modal_var,autoref,True,,28,68226,1,1.344
+cloud,10,44,100000,modal_var,autoref,False,manager a 5074154 nodi > 5000000,33,,,23.016
+diabetes,5,68,1000,infogain,autoref,True,,34,3469,91,0.718
+diabetes,10,68,1000,infogain,autoref,False,timeout dopo 60.0s,42,,,60.016
+diabetes,5,68,1000,modal_var,autoref,True,,34,4489,140,2.687
+diabetes,10,68,1000,modal_var,autoref,False,manager a 5000858 nodi > 5000000,42,,,24.797
+diabetes,5,68,100000,infogain,autoref,True,,34,21577,1,0.375
+diabetes,10,68,100000,infogain,autoref,True,,42,133840,7,9.469
+diabetes,20,68,100000,infogain,autoref,False,manager a 5194774 nodi > 5000000,47,,,13.984
+diabetes,5,68,100000,modal_var,autoref,True,,34,21577,1,0.328
+diabetes,10,68,100000,modal_var,autoref,False,manager a 5004480 nodi > 5000000,42,,,18.579
+ecoli,5,39,1000,infogain,autoref,True,,23,1844,50,0.531
+ecoli,10,39,1000,infogain,autoref,False,timeout dopo 60.0s,26,,,60.015
+ecoli,5,39,1000,modal_var,autoref,True,,23,1844,22,0.563
+ecoli,10,39,1000,modal_var,autoref,True,,26,2378,1388,23.359
+ecoli,20,39,1000,modal_var,autoref,False,timeout dopo 60.1s,31,,,60.141
+ecoli,5,39,100000,infogain,autoref,True,,23,4438,1,0.36
+ecoli,10,39,100000,infogain,autoref,True,,26,29747,1,3.109
+ecoli,20,39,100000,infogain,autoref,False,manager a 5340441 nodi > 5000000,31,,,17.86
+ecoli,5,39,100000,modal_var,autoref,True,,23,4438,1,0.343
+ecoli,10,39,100000,modal_var,autoref,True,,26,29747,1,2.985
+ecoli,20,39,100000,modal_var,autoref,False,manager a 5076549 nodi > 5000000,31,,,20.485
+factors,5,44,1000,infogain,autoref,False,timeout dopo 60.0s,234,,,60.016
+factors,5,44,1000,modal_var,autoref,False,manager a 10007172 nodi > 5000000,234,,,25.687
+factors,5,44,100000,infogain,autoref,False,timeout dopo 489.7s,234,,,489.735
+factors,5,44,100000,modal_var,autoref,False,timeout dopo 470.5s,234,,,470.516
+fourier,5,90,1000,infogain,autoref,False,timeout dopo 60.0s,195,,,60.015
+fourier,5,90,1000,modal_var,autoref,False,timeout dopo 60.0s,195,,,60.016
+fourier,5,90,100000,infogain,autoref,False,manager a 10642556 nodi > 5000000,195,,,29.031
+fourier,5,90,100000,modal_var,autoref,False,manager a 12124020 nodi > 5000000,195,,,40.594
+glass,5,67,1000,infogain,autoref,True,,32,2506,1027,3.813
+glass,10,67,1000,infogain,autoref,False,timeout dopo 60.0s,40,,,60.015
+glass,5,67,1000,modal_var,autoref,True,,32,2266,64,0.968
+glass,10,67,1000,modal_var,autoref,False,manager a 5000453 nodi > 5000000,40,,,48.016
+glass,5,67,100000,infogain,autoref,True,,32,8115,1,0.313
+glass,10,67,100000,infogain,autoref,True,,40,195056,3,8.937
+glass,20,67,100000,infogain,autoref,False,manager a 5544610 nodi > 5000000,49,,,15.859
+glass,5,67,100000,modal_var,autoref,True,,32,8115,1,0.312
+glass,10,67,100000,modal_var,autoref,False,manager a 5336584 nodi > 5000000,40,,,24.14
+glass2,5,12,1000,infogain,autoref,True,,21,323,1,0.016
+glass2,10,12,1000,infogain,autoref,True,,28,1425,13,0.203
+glass2,12,12,1000,infogain,autoref,True,,29,1682,65,0.656
+glass2,5,12,1000,modal_var,autoref,True,,21,323,1,0.032
+glass2,10,12,1000,modal_var,autoref,True,,28,1425,10,0.218
+glass2,12,12,1000,modal_var,autoref,True,,29,1648,40,0.813
+glass2,5,12,100000,infogain,autoref,True,,21,323,1,0.016
+glass2,10,12,100000,infogain,autoref,True,,28,5013,1,0.14
+glass2,12,12,100000,infogain,autoref,True,,29,7986,1,0.297
+glass2,5,12,100000,modal_var,autoref,True,,21,323,1,0.032
+glass2,10,12,100000,modal_var,autoref,True,,28,5013,1,0.156
+glass2,12,12,100000,modal_var,autoref,True,,29,7986,1,0.297
+haberman,5,44,1000,infogain,autoref,True,,13,137,1,0.015
+haberman,10,44,1000,infogain,autoref,True,,13,241,1,0.063
+haberman,20,44,1000,infogain,autoref,True,,15,719,1,0.172
+haberman,44,44,1000,infogain,autoref,True,,15,1090,4,0.781
+haberman,5,44,1000,modal_var,autoref,True,,13,137,1,0.016
+haberman,10,44,1000,modal_var,autoref,True,,13,241,1,0.047
+haberman,20,44,1000,modal_var,autoref,True,,15,719,1,0.172
+haberman,44,44,1000,modal_var,autoref,True,,15,1090,4,0.828
+haberman,5,44,100000,infogain,autoref,True,,13,137,1,0.016
+haberman,10,44,100000,infogain,autoref,True,,13,241,1,0.062
+haberman,20,44,100000,infogain,autoref,True,,15,719,1,0.172
+haberman,44,44,100000,infogain,autoref,True,,15,1872,1,0.703
+haberman,5,44,100000,modal_var,autoref,True,,13,137,1,0.032
+haberman,10,44,100000,modal_var,autoref,True,,13,241,1,0.046
+haberman,20,44,100000,modal_var,autoref,True,,15,719,1,0.172
+haberman,44,44,100000,modal_var,autoref,True,,15,1872,1,0.703
+heart-c,5,33,1000,infogain,autoref,True,,26,1577,4,0.047
+heart-c,10,33,1000,infogain,autoref,True,,32,2029,1204,7.641
+heart-c,20,33,1000,infogain,autoref,False,timeout dopo 60.0s,35,,,60.016
+heart-c,5,33,1000,modal_var,autoref,True,,26,1577,2,0.047
+heart-c,10,33,1000,modal_var,autoref,True,,32,2029,55,1.125
+heart-c,20,33,1000,modal_var,autoref,False,manager a 5000127 nodi > 5000000,35,,,24.36
+heart-c,5,33,100000,infogain,autoref,True,,26,1577,1,0.047
+heart-c,10,33,100000,infogain,autoref,True,,32,31719,1,0.657
+heart-c,20,33,100000,infogain,autoref,False,manager a 5003964 nodi > 5000000,35,,,13.703
+heart-c,5,33,100000,modal_var,autoref,True,,26,1577,1,0.047
+heart-c,10,33,100000,modal_var,autoref,True,,32,31719,1,0.64
+heart-c,20,33,100000,modal_var,autoref,False,manager a 5055516 nodi > 5000000,35,,,12.25
+heart-h,5,39,1000,infogain,autoref,True,,21,245,1,0.016
+heart-h,10,39,1000,infogain,autoref,True,,27,1226,25,0.203
+heart-h,20,39,1000,infogain,autoref,True,,32,1581,298,5.516
+heart-h,39,39,1000,infogain,autoref,False,timeout dopo 60.0s,34,,,60.016
+heart-h,5,39,1000,modal_var,autoref,True,,21,245,1,0.016
+heart-h,10,39,1000,modal_var,autoref,True,,27,1179,3,0.094
+heart-h,20,39,1000,modal_var,autoref,True,,32,1480,31,1.453
+heart-h,39,39,1000,modal_var,autoref,False,manager a 5000671 nodi > 5000000,34,,,17.094
+heart-h,5,39,100000,infogain,autoref,True,,21,245,1,0.031
+heart-h,10,39,100000,infogain,autoref,True,,27,2726,1,0.109
+heart-h,20,39,100000,infogain,autoref,True,,32,14464,1,0.828
+heart-h,39,39,100000,infogain,autoref,True,,34,84360,1,8.657
+heart-h,5,39,100000,modal_var,autoref,True,,21,245,1,0.015
+heart-h,10,39,100000,modal_var,autoref,True,,27,2726,1,0.11
+heart-h,20,39,100000,modal_var,autoref,True,,32,14464,1,0.828
+heart-h,39,39,100000,modal_var,autoref,True,,34,84360,1,8.656
+heart-sa,5,48,1000,infogain,autoref,True,,26,1340,1,0.032
+heart-sa,10,48,1000,infogain,autoref,True,,34,2698,3775,15.813
+heart-sa,20,48,1000,infogain,autoref,False,timeout dopo 60.0s,38,,,60.016
+heart-sa,5,48,1000,modal_var,autoref,True,,26,1340,1,0.047
+heart-sa,10,48,1000,modal_var,autoref,True,,34,2407,84,1.531
+heart-sa,20,48,1000,modal_var,autoref,False,manager a 5000752 nodi > 5000000,38,,,19.141
+heart-sa,5,48,100000,infogain,autoref,True,,26,1340,1,0.047
+heart-sa,10,48,100000,infogain,autoref,True,,34,29682,1,0.656
+heart-sa,20,48,100000,infogain,autoref,False,manager a 5038645 nodi > 5000000,38,,,13.906
+heart-sa,5,48,100000,modal_var,autoref,True,,26,1340,1,0.047
+heart-sa,10,48,100000,modal_var,autoref,True,,34,29682,1,0.656
+heart-sa,20,48,100000,modal_var,autoref,False,manager a 5255569 nodi > 5000000,38,,,15.75
+ionosphere,5,70,1000,infogain,autoref,True,,44,2820,89,0.391
+ionosphere,10,70,1000,infogain,autoref,False,timeout dopo 60.0s,71,,,60.015
+ionosphere,5,70,1000,modal_var,autoref,True,,44,2528,5,0.11
+ionosphere,10,70,1000,modal_var,autoref,False,timeout dopo 60.0s,71,,,60.031
+ionosphere,5,70,100000,infogain,autoref,True,,44,8496,1,0.094
+ionosphere,10,70,100000,infogain,autoref,False,timeout dopo 60.2s,71,,,60.25
+ionosphere,5,70,100000,modal_var,autoref,True,,44,8496,1,0.094
+ionosphere,10,70,100000,modal_var,autoref,False,manager a 5256722 nodi > 5000000,71,,,25.953
+iris,5,26,1000,infogain,autoref,True,,11,75,1,0.047
+iris,10,26,1000,infogain,autoref,True,,12,292,1,0.203
+iris,20,26,1000,infogain,autoref,True,,16,790,1,0.906
+iris,26,26,1000,infogain,autoref,True,,16,1058,4,1.266
+iris,5,26,1000,modal_var,autoref,True,,11,75,1,0.047
+iris,10,26,1000,modal_var,autoref,True,,12,292,1,0.219
+iris,20,26,1000,modal_var,autoref,True,,16,790,1,0.953
+iris,26,26,1000,modal_var,autoref,True,,16,1058,3,1.281
+iris,5,26,100000,infogain,autoref,True,,11,75,1,0.031
+iris,10,26,100000,infogain,autoref,True,,12,292,1,0.204
+iris,20,26,100000,infogain,autoref,True,,16,790,1,0.922
+iris,26,26,100000,infogain,autoref,True,,16,1312,1,1.266
+iris,5,26,100000,modal_var,autoref,True,,11,75,1,0.047
+iris,10,26,100000,modal_var,autoref,True,,12,292,1,0.203
+iris,20,26,100000,modal_var,autoref,True,,16,790,1,0.938
+iris,26,26,100000,modal_var,autoref,True,,16,1312,1,1.266
+karhunen,5,96,1000,infogain,autoref,False,manager a 16099921 nodi > 5000000,245,,,51.203
+karhunen,5,96,1000,modal_var,autoref,False,manager a 16983049 nodi > 5000000,245,,,54.891
+karhunen,5,96,100000,infogain,autoref,False,timeout dopo 185.5s,245,,,185.532
+karhunen,5,96,100000,modal_var,autoref,False,timeout dopo 178.0s,245,,,178.0
+letter,5,100,1000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+letter,5,100,1000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+letter,5,100,100000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+letter,5,100,100000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+lupus,5,28,1000,infogain,autoref,True,,9,39,1,0.015
+lupus,10,28,1000,infogain,autoref,True,,11,105,1,0.032
+lupus,20,28,1000,infogain,autoref,True,,12,224,1,0.109
+lupus,28,28,1000,infogain,autoref,True,,13,383,1,0.172
+lupus,5,28,1000,modal_var,autoref,True,,9,39,1,0.015
+lupus,10,28,1000,modal_var,autoref,True,,11,105,1,0.047
+lupus,20,28,1000,modal_var,autoref,True,,12,224,1,0.109
+lupus,28,28,1000,modal_var,autoref,True,,13,383,1,0.171
+lupus,5,28,100000,infogain,autoref,True,,9,39,1,0.016
+lupus,10,28,100000,infogain,autoref,True,,11,105,1,0.046
+lupus,20,28,100000,infogain,autoref,True,,12,224,1,0.125
+lupus,28,28,100000,infogain,autoref,True,,13,383,1,0.172
+lupus,5,28,100000,modal_var,autoref,True,,9,39,1,0.016
+lupus,10,28,100000,modal_var,autoref,True,,11,105,1,0.047
+lupus,20,28,100000,modal_var,autoref,True,,12,224,1,0.125
+lupus,28,28,100000,modal_var,autoref,True,,13,383,1,0.172
+magic,5,44,1000,infogain,autoref,False,timeout dopo 60.0s,73,,,60.015
+magic,5,44,1000,modal_var,autoref,False,timeout dopo 60.1s,73,,,60.062
+magic,5,44,100000,infogain,autoref,False,timeout dopo 60.2s,73,,,60.219
+magic,5,44,100000,modal_var,autoref,False,timeout dopo 64.9s,73,,,64.89
+mammo,5,12,1000,infogain,autoref,True,,13,101,1,0.015
+mammo,10,12,1000,infogain,autoref,True,,13,280,1,0.047
+mammo,12,12,1000,infogain,autoref,True,,13,338,1,0.063
+mammo,5,12,1000,modal_var,autoref,True,,13,101,1,0.016
+mammo,10,12,1000,modal_var,autoref,True,,13,280,1,0.047
+mammo,12,12,1000,modal_var,autoref,True,,13,338,1,0.062
+mammo,5,12,100000,infogain,autoref,True,,13,101,1,0.016
+mammo,10,12,100000,infogain,autoref,True,,13,280,1,0.047
+mammo,12,12,100000,infogain,autoref,True,,13,338,1,0.063
+mammo,5,12,100000,modal_var,autoref,True,,13,101,1,0.016
+mammo,10,12,100000,modal_var,autoref,True,,13,280,1,0.047
+mammo,12,12,100000,modal_var,autoref,True,,13,338,1,0.063
+messidor,5,64,1000,infogain,autoref,False,timeout dopo 60.0s,74,,,60.015
+messidor,5,64,1000,modal_var,autoref,False,timeout dopo 60.0s,74,,,60.031
+messidor,5,64,100000,infogain,autoref,False,timeout dopo 60.2s,74,,,60.203
+messidor,5,64,100000,modal_var,autoref,True,,74,657870,13,58.954
+messidor,10,64,100000,modal_var,autoref,False,timeout dopo 62.2s,88,,,62.156
+mofn-3-7-10,5,75,1000,infogain,autoref,True,,10,221,1,0.078
+mofn-3-7-10,10,75,1000,infogain,autoref,True,,10,310,1,0.171
+mofn-3-7-10,20,75,1000,infogain,autoref,True,,10,429,1,0.375
+mofn-3-7-10,75,75,1000,infogain,autoref,True,,10,844,1,2.282
+mofn-3-7-10,5,75,1000,modal_var,autoref,True,,10,221,1,0.078
+mofn-3-7-10,10,75,1000,modal_var,autoref,True,,10,310,1,0.172
+mofn-3-7-10,20,75,1000,modal_var,autoref,True,,10,429,1,0.375
+mofn-3-7-10,75,75,1000,modal_var,autoref,True,,10,844,1,2.281
+mofn-3-7-10,5,75,100000,infogain,autoref,True,,10,221,1,0.094
+mofn-3-7-10,10,75,100000,infogain,autoref,True,,10,310,1,0.172
+mofn-3-7-10,20,75,100000,infogain,autoref,True,,10,429,1,0.375
+mofn-3-7-10,75,75,100000,infogain,autoref,True,,10,844,1,2.281
+mofn-3-7-10,5,75,100000,modal_var,autoref,True,,10,221,1,0.078
+mofn-3-7-10,10,75,100000,modal_var,autoref,True,,10,310,1,0.172
+mofn-3-7-10,20,75,100000,modal_var,autoref,True,,10,429,1,0.359
+mofn-3-7-10,75,75,100000,modal_var,autoref,True,,10,844,1,2.281
+new-thyroid,5,51,1000,infogain,autoref,True,,19,771,1,0.078
+new-thyroid,10,51,1000,infogain,autoref,True,,22,1681,66,0.859
+new-thyroid,20,51,1000,infogain,autoref,True,,25,1861,2043,37.297
+new-thyroid,51,51,1000,infogain,autoref,False,timeout dopo 60.0s,28,,,60.016
+new-thyroid,5,51,1000,modal_var,autoref,True,,19,771,1,0.063
+new-thyroid,10,51,1000,modal_var,autoref,True,,22,1741,17,0.641
+new-thyroid,20,51,1000,modal_var,autoref,True,,25,2142,458,15.984
+new-thyroid,51,51,1000,modal_var,autoref,False,timeout dopo 60.0s,28,,,60.016
+new-thyroid,5,51,100000,infogain,autoref,True,,19,771,1,0.063
+new-thyroid,10,51,100000,infogain,autoref,True,,22,8002,1,0.468
+new-thyroid,20,51,100000,infogain,autoref,True,,25,38839,1,3.859
+new-thyroid,51,51,100000,infogain,autoref,False,timeout dopo 60.7s,28,,,60.687
+new-thyroid,5,51,100000,modal_var,autoref,True,,19,771,1,0.062
+new-thyroid,10,51,100000,modal_var,autoref,True,,22,8002,1,0.469
+new-thyroid,20,51,100000,modal_var,autoref,True,,25,38839,1,3.859
+new-thyroid,51,51,100000,modal_var,autoref,False,timeout dopo 60.2s,28,,,60.219
+pendigits,5,44,1000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.0
+pendigits,5,44,1000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+pendigits,5,44,100000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+pendigits,5,44,100000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+phoneme,5,56,1000,infogain,autoref,False,timeout dopo 60.0s,40,,,60.016
+phoneme,5,56,1000,modal_var,autoref,True,,40,19617,1977,49.782
+phoneme,10,56,1000,modal_var,autoref,False,timeout dopo 60.0s,45,,,60.031
+phoneme,5,56,100000,infogain,autoref,True,,40,199646,5,10.656
+phoneme,10,56,100000,infogain,autoref,False,timeout dopo 61.4s,45,,,61.375
+phoneme,5,56,100000,modal_var,autoref,True,,40,199646,5,12.656
+phoneme,10,56,100000,modal_var,autoref,False,timeout dopo 60.5s,45,,,60.531
+pima,5,16,1000,infogain,autoref,False,timeout dopo 60.0s,42,,,60.016
+pima,5,16,1000,modal_var,autoref,True,,42,17503,2036,42.36
+pima,10,16,1000,modal_var,autoref,False,timeout dopo 60.0s,49,,,60.015
+pima,5,16,100000,infogain,autoref,True,,42,177057,3,5.203
+pima,10,16,100000,infogain,autoref,False,timeout dopo 60.7s,49,,,60.704
+pima,5,16,100000,modal_var,autoref,True,,42,177057,5,10.235
+pima,10,16,100000,modal_var,autoref,False,timeout dopo 61.0s,49,,,60.969
+ring,5,82,1000,infogain,autoref,False,timeout dopo 60.0s,97,,,60.032
+ring,5,82,1000,modal_var,autoref,False,timeout dopo 62.3s,97,,,62.344
+ring,5,82,100000,infogain,autoref,False,timeout dopo 61.0s,97,,,61.0
+ring,5,82,100000,modal_var,autoref,False,timeout dopo 60.0s,97,,,60.047
+segmentation,5,75,1000,infogain,autoref,False,timeout dopo 60.0s,42,,,60.016
+segmentation,5,75,1000,modal_var,autoref,False,timeout dopo 60.0s,42,,,60.047
+segmentation,5,75,100000,infogain,autoref,True,,42,131560,1,1.953
+segmentation,10,75,100000,infogain,autoref,False,timeout dopo 60.7s,62,,,60.657
+segmentation,5,75,100000,modal_var,autoref,True,,42,131560,1,1.968
+segmentation,10,75,100000,modal_var,autoref,False,timeout dopo 63.6s,62,,,63.578
+seismic_bumps,5,88,1000,infogain,autoref,True,,43,759,1,0.047
+seismic_bumps,10,88,1000,infogain,autoref,True,,47,1741,524,2.531
+seismic_bumps,20,88,1000,infogain,autoref,False,timeout dopo 60.0s,57,,,60.015
+seismic_bumps,5,88,1000,modal_var,autoref,True,,43,759,1,0.062
+seismic_bumps,10,88,1000,modal_var,autoref,True,,47,1741,26,0.484
+seismic_bumps,20,88,1000,modal_var,autoref,False,timeout dopo 60.0s,57,,,60.016
+seismic_bumps,5,88,100000,infogain,autoref,True,,43,759,1,0.063
+seismic_bumps,10,88,100000,infogain,autoref,True,,47,3955,1,0.235
+seismic_bumps,20,88,100000,infogain,autoref,True,,57,108993,2,9.157
+seismic_bumps,88,88,100000,infogain,autoref,False,timeout dopo 60.1s,67,,,60.079
+seismic_bumps,5,88,100000,modal_var,autoref,True,,43,759,1,0.062
+seismic_bumps,10,88,100000,modal_var,autoref,True,,47,3955,1,0.219
+seismic_bumps,20,88,100000,modal_var,autoref,True,,57,108993,2,9.062
+seismic_bumps,88,88,100000,modal_var,autoref,False,timeout dopo 64.8s,67,,,64.781
+shuttle,5,19,1000,infogain,autoref,False,timeout dopo 60.0s,40,,,60.016
+shuttle,5,19,1000,modal_var,autoref,True,,40,4013,1158,15.031
+shuttle,10,19,1000,modal_var,autoref,False,timeout dopo 60.0s,45,,,60.016
+shuttle,5,19,100000,infogain,autoref,True,,40,89504,1,1.641
+shuttle,10,19,100000,infogain,autoref,False,timeout dopo 66.5s,45,,,66.469
+shuttle,5,19,100000,modal_var,autoref,True,,40,89504,1,1.656
+shuttle,10,19,100000,modal_var,autoref,False,timeout dopo 60.9s,45,,,60.906
+sonar,5,61,1000,infogain,autoref,True,,39,2988,4,0.062
+sonar,10,61,1000,infogain,autoref,False,timeout dopo 60.0s,71,,,60.016
+sonar,5,61,1000,modal_var,autoref,True,,39,2734,2,0.047
+sonar,10,61,1000,modal_var,autoref,False,timeout dopo 60.0s,71,,,60.016
+sonar,5,61,100000,infogain,autoref,True,,39,3360,1,0.047
+sonar,10,61,100000,infogain,autoref,True,,71,263701,3,6.75
+sonar,20,61,100000,infogain,autoref,False,timeout dopo 60.4s,111,,,60.406
+sonar,5,61,100000,modal_var,autoref,True,,39,3360,1,0.047
+sonar,10,61,100000,modal_var,autoref,True,,71,293077,3,9.328
+sonar,20,61,100000,modal_var,autoref,False,timeout dopo 61.4s,111,,,61.438
+spambase,5,91,1000,infogain,autoref,False,timeout dopo 60.0s,180,,,60.032
+spambase,5,91,1000,modal_var,autoref,False,timeout dopo 60.0s,180,,,60.016
+spambase,5,91,100000,infogain,autoref,False,timeout dopo 75.6s,180,,,75.594
+spambase,5,91,100000,modal_var,autoref,False,timeout dopo 75.6s,180,,,75.609
+spect,5,53,1000,infogain,autoref,True,,21,96,1,0.016
+spect,10,53,1000,infogain,autoref,True,,22,544,1,0.047
+spect,20,53,1000,infogain,autoref,True,,22,1340,11,0.36
+spect,53,53,1000,infogain,autoref,True,,22,1496,179,8.438
+spect,5,53,1000,modal_var,autoref,True,,21,96,1,0.015
+spect,10,53,1000,modal_var,autoref,True,,22,544,1,0.062
+spect,20,53,1000,modal_var,autoref,True,,22,1293,6,0.297
+spect,53,53,1000,modal_var,autoref,True,,22,1658,76,4.859
+spect,5,53,100000,infogain,autoref,True,,21,96,1,0.016
+spect,10,53,100000,infogain,autoref,True,,22,544,1,0.063
+spect,20,53,100000,infogain,autoref,True,,22,3372,1,0.281
+spect,53,53,100000,infogain,autoref,True,,22,33197,1,3.891
+spect,5,53,100000,modal_var,autoref,True,,21,96,1,0.016
+spect,10,53,100000,modal_var,autoref,True,,22,544,1,0.062
+spect,20,53,100000,modal_var,autoref,True,,22,3372,1,0.281
+spect,53,53,100000,modal_var,autoref,True,,22,33197,1,3.875
+spectf,5,10,1000,infogain,autoref,True,,41,1287,1,0.031
+spectf,10,10,1000,infogain,autoref,False,timeout dopo 60.0s,66,,,60.016
+spectf,5,10,1000,modal_var,autoref,True,,41,1287,1,0.015
+spectf,10,10,1000,modal_var,autoref,False,timeout dopo 60.0s,66,,,60.015
+spectf,5,10,100000,infogain,autoref,True,,41,1287,1,0.016
+spectf,10,10,100000,infogain,autoref,True,,66,320382,3,4.968
+spectf,5,10,100000,modal_var,autoref,True,,41,1287,1,0.031
+spectf,10,10,100000,modal_var,autoref,True,,66,231337,3,6.422
+texture,5,89,1000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.0
+texture,5,89,1000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+texture,5,89,100000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.015
+texture,5,89,100000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.015
+threeOf9,5,44,1000,infogain,autoref,True,,9,104,1,0.016
+threeOf9,10,44,1000,infogain,autoref,True,,9,172,1,0.046
+threeOf9,20,44,1000,infogain,autoref,True,,9,201,1,0.14
+threeOf9,44,44,1000,infogain,autoref,True,,9,297,1,0.422
+threeOf9,5,44,1000,modal_var,autoref,True,,9,104,1,0.031
+threeOf9,10,44,1000,modal_var,autoref,True,,9,172,1,0.063
+threeOf9,20,44,1000,modal_var,autoref,True,,9,201,1,0.141
+threeOf9,44,44,1000,modal_var,autoref,True,,9,297,1,0.422
+threeOf9,5,44,100000,infogain,autoref,True,,9,104,1,0.016
+threeOf9,10,44,100000,infogain,autoref,True,,9,172,1,0.047
+threeOf9,20,44,100000,infogain,autoref,True,,9,201,1,0.14
+threeOf9,44,44,100000,infogain,autoref,True,,9,297,1,0.407
+threeOf9,5,44,100000,modal_var,autoref,True,,9,104,1,0.016
+threeOf9,10,44,100000,modal_var,autoref,True,,9,172,1,0.047
+threeOf9,20,44,100000,modal_var,autoref,True,,9,201,1,0.14
+threeOf9,44,44,100000,modal_var,autoref,True,,9,297,1,0.422
+twonorm,5,80,1000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.0
+twonorm,5,80,1000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+twonorm,5,80,100000,infogain,autoref,False,timeout dopo 86.8s,121,,,86.828
+twonorm,5,80,100000,modal_var,autoref,False,timeout dopo 94.1s,121,,,94.062
+vehicle,5,59,1000,infogain,autoref,False,timeout dopo 60.0s,70,,,60.016
+vehicle,5,59,1000,modal_var,autoref,False,timeout dopo 60.0s,70,,,60.016
+vehicle,5,59,100000,infogain,autoref,False,timeout dopo 60.3s,70,,,60.313
+vehicle,5,59,100000,modal_var,autoref,False,timeout dopo 62.4s,70,,,62.438
+vowel,5,95,1000,infogain,autoref,False,timeout dopo 60.0s,68,,,60.015
+vowel,5,95,1000,modal_var,autoref,False,timeout dopo 60.0s,68,,,60.016
+vowel,5,95,100000,infogain,autoref,False,timeout dopo 60.4s,68,,,60.406
+vowel,5,95,100000,modal_var,autoref,False,timeout dopo 75.2s,68,,,75.235
+waveform-21,5,69,1000,infogain,autoref,False,timeout dopo 93.6s,125,,,93.594
+waveform-21,5,69,1000,modal_var,autoref,False,timeout dopo 99.8s,125,,,99.765
+waveform-21,5,69,100000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+waveform-21,5,69,100000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+waveform-40,5,60,1000,infogain,autoref,False,timeout dopo 106.7s,212,,,106.687
+waveform-40,5,60,1000,modal_var,autoref,False,timeout dopo 134.9s,212,,,134.937
+waveform-40,5,60,100000,infogain,autoref,False,timeout dopo 135.4s,212,,,135.407
+waveform-40,5,60,100000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.0
+wdbc,5,40,1000,infogain,autoref,True,,47,8619,11458,50.078
+wdbc,10,40,1000,infogain,autoref,False,timeout dopo 60.0s,79,,,60.016
+wdbc,5,40,1000,modal_var,autoref,True,,47,8798,145,3.0
+wdbc,10,40,1000,modal_var,autoref,False,timeout dopo 60.0s,79,,,60.015
+wdbc,5,40,100000,infogain,autoref,True,,47,100418,1,0.828
+wdbc,10,40,100000,infogain,autoref,False,timeout dopo 60.9s,79,,,60.89
+wdbc,5,40,100000,modal_var,autoref,True,,47,100418,1,0.828
+wdbc,10,40,100000,modal_var,autoref,False,timeout dopo 60.3s,79,,,60.344
+wine-quality-red,5,93,1000,infogain,autoref,False,timeout dopo 89.4s,70,,,89.39
+wine-quality-red,5,93,1000,modal_var,autoref,False,timeout dopo 115.7s,70,,,115.703
+wine-quality-red,5,93,100000,infogain,autoref,False,timeout dopo 105.0s,70,,,105.046
+wine-quality-red,5,93,100000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+wine-quality-white,5,53,1000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+wine-quality-white,5,53,1000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+wine-quality-white,5,53,100000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+wine-quality-white,5,53,100000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+wine-recog,5,24,1000,infogain,autoref,True,,20,118,1,0.047
+wine-recog,10,24,1000,infogain,autoref,True,,31,1779,594,2.719
+wine-recog,20,24,1000,infogain,autoref,False,timeout dopo 60.0s,45,,,60.016
+wine-recog,5,24,1000,modal_var,autoref,True,,20,118,1,0.046
+wine-recog,10,24,1000,modal_var,autoref,True,,31,1674,15,0.453
+wine-recog,20,24,1000,modal_var,autoref,False,timeout dopo 60.0s,45,,,60.016
+wine-recog,5,24,100000,infogain,autoref,True,,20,118,1,0.047
+wine-recog,10,24,100000,infogain,autoref,True,,31,4672,1,0.265
+wine-recog,20,24,100000,infogain,autoref,True,,45,133345,21,20.797
+wine-recog,24,24,100000,infogain,autoref,False,timeout dopo 60.1s,47,,,60.109
+wine-recog,5,24,100000,modal_var,autoref,True,,20,118,1,0.047
+wine-recog,10,24,100000,modal_var,autoref,True,,31,4672,1,0.281
+wine-recog,20,24,100000,modal_var,autoref,True,,45,139463,9,31.125
+wine-recog,24,24,100000,modal_var,autoref,False,timeout dopo 65.0s,47,,,65.0
+wine-recognition,5,24,1000,infogain,autoref,True,,20,118,1,0.047
+wine-recognition,10,24,1000,infogain,autoref,True,,31,1779,594,2.672
+wine-recognition,20,24,1000,infogain,autoref,False,timeout dopo 60.0s,45,,,60.016
+wine-recognition,5,24,1000,modal_var,autoref,True,,20,118,1,0.047
+wine-recognition,10,24,1000,modal_var,autoref,True,,31,1674,15,0.453
+wine-recognition,20,24,1000,modal_var,autoref,False,timeout dopo 60.0s,45,,,60.016
+wine-recognition,5,24,100000,infogain,autoref,True,,20,118,1,0.047
+wine-recognition,10,24,100000,infogain,autoref,True,,31,4672,1,0.281
+wine-recognition,20,24,100000,infogain,autoref,True,,45,133345,21,20.797
+wine-recognition,24,24,100000,infogain,autoref,False,timeout dopo 60.2s,47,,,60.172
+wine-recognition,5,24,100000,modal_var,autoref,True,,20,118,1,0.047
+wine-recognition,10,24,100000,modal_var,autoref,True,,31,4672,1,0.282
+wine-recognition,20,24,100000,modal_var,autoref,True,,45,139463,9,30.937
+wine-recognition,24,24,100000,modal_var,autoref,False,timeout dopo 65.3s,47,,,65.344
+wpbc,5,35,1000,infogain,autoref,True,,44,2670,1,0.047
+wpbc,10,35,1000,infogain,autoref,False,timeout dopo 60.0s,73,,,60.015
+wpbc,5,35,1000,modal_var,autoref,True,,44,2670,1,0.031
+wpbc,10,35,1000,modal_var,autoref,False,timeout dopo 60.0s,73,,,60.015
+wpbc,5,35,100000,infogain,autoref,True,,44,2670,1,0.031
+wpbc,10,35,100000,infogain,autoref,True,,73,582638,17,32.156
+wpbc,20,35,100000,infogain,autoref,False,timeout dopo 60.3s,104,,,60.281
+wpbc,5,35,100000,modal_var,autoref,True,,44,2670,1,0.031
+wpbc,10,35,100000,modal_var,autoref,True,,73,342805,14,45.062
+wpbc,20,35,100000,modal_var,autoref,False,timeout dopo 60.3s,104,,,60.297
+xd6,5,44,1000,infogain,autoref,True,,9,146,1,0.047
+xd6,10,44,1000,infogain,autoref,True,,9,229,1,0.109
+xd6,20,44,1000,infogain,autoref,True,,9,322,1,0.25
+xd6,44,44,1000,infogain,autoref,True,,9,469,1,0.687
+xd6,5,44,1000,modal_var,autoref,True,,9,146,1,0.047
+xd6,10,44,1000,modal_var,autoref,True,,9,229,1,0.11
+xd6,20,44,1000,modal_var,autoref,True,,9,322,1,0.25
+xd6,44,44,1000,modal_var,autoref,True,,9,469,1,0.687
+xd6,5,44,100000,infogain,autoref,True,,9,146,1,0.047
+xd6,10,44,100000,infogain,autoref,True,,9,229,1,0.11
+xd6,20,44,100000,infogain,autoref,True,,9,322,1,0.25
+xd6,44,44,100000,infogain,autoref,True,,9,469,1,0.687
+xd6,5,44,100000,modal_var,autoref,True,,9,146,1,0.047
+xd6,10,44,100000,modal_var,autoref,True,,9,229,1,0.11
+xd6,20,44,100000,modal_var,autoref,True,,9,322,1,0.266
+xd6,44,44,100000,modal_var,autoref,True,,9,469,1,0.687
+zernike,5,39,1000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.016
+zernike,5,39,1000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.015
+zernike,5,39,100000,infogain,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.0
+zernike,5,39,100000,modal_var,autoref,False,hard kill dopo 180s (formula fuori dai check cooperativi),,,,180.0

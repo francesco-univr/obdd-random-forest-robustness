@@ -1,0 +1,197 @@
+{
+ "title": "iris \u2014 Win_1 (k=3)",
+ "subtitle": "9 nodi | regione certificata della classe 1",
+ "feature_names": [
+  "sepal.length",
+  "sepal.width",
+  "petal.length",
+  "petal.width"
+ ],
+ "features_present": [
+  2,
+  3
+ ],
+ "feature_thresholds": {
+  "2": [
+   2.45,
+   4.55,
+   4.6,
+   4.85
+  ],
+  "3": [
+   0.75,
+   1.55,
+   1.7,
+   1.85,
+   1.95
+  ]
+ },
+ "nodes": [
+  {
+   "id": "n0",
+   "var": "B_2_2",
+   "feature": 2,
+   "feature_name": "petal.length",
+   "bit": 2,
+   "level": 1
+  },
+  {
+   "id": "n1",
+   "var": "B_2_1",
+   "feature": 2,
+   "feature_name": "petal.length",
+   "bit": 1,
+   "level": 2
+  },
+  {
+   "id": "n2",
+   "var": "B_2_0",
+   "feature": 2,
+   "feature_name": "petal.length",
+   "bit": 0,
+   "level": 3
+  },
+  {
+   "id": "n3",
+   "var": "B_3_2",
+   "feature": 3,
+   "feature_name": "petal.width",
+   "bit": 2,
+   "level": 4
+  },
+  {
+   "id": "n4",
+   "var": "B_3_1",
+   "feature": 3,
+   "feature_name": "petal.width",
+   "bit": 1,
+   "level": 5
+  },
+  {
+   "id": "n5",
+   "var": "B_3_0",
+   "feature": 3,
+   "feature_name": "petal.width",
+   "bit": 0,
+   "level": 6
+  },
+  {
+   "id": "n6",
+   "var": "B_3_2",
+   "feature": 3,
+   "feature_name": "petal.width",
+   "bit": 2,
+   "level": 4
+  },
+  {
+   "id": "n7",
+   "var": "B_3_1",
+   "feature": 3,
+   "feature_name": "petal.width",
+   "bit": 1,
+   "level": 5
+  },
+  {
+   "id": "n8",
+   "var": "B_3_0",
+   "feature": 3,
+   "feature_name": "petal.width",
+   "bit": 0,
+   "level": 6
+  }
+ ],
+ "edges": [
+  {
+   "src": "n2",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n4",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n5",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n5",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n4",
+   "dst": "n5",
+   "branch": 1
+  },
+  {
+   "src": "n3",
+   "dst": "n4",
+   "branch": 0
+  },
+  {
+   "src": "n3",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n2",
+   "dst": "n3",
+   "branch": 1
+  },
+  {
+   "src": "n1",
+   "dst": "n2",
+   "branch": 0
+  },
+  {
+   "src": "n1",
+   "dst": "n3",
+   "branch": 1
+  },
+  {
+   "src": "n0",
+   "dst": "n1",
+   "branch": 0
+  },
+  {
+   "src": "n8",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n8",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n7",
+   "dst": "n8",
+   "branch": 0
+  },
+  {
+   "src": "n7",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n6",
+   "dst": "n7",
+   "branch": 0
+  },
+  {
+   "src": "n6",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n0",
+   "dst": "n6",
+   "branch": 1
+  }
+ ],
+ "root": "n0",
+ "n_levels": 7
+}

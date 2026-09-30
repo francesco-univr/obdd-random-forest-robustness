@@ -1,0 +1,915 @@
+{
+ "title": "mammo \u2014 Win_0 (k=3)",
+ "subtitle": "47 nodi | regione certificata della classe 0",
+ "feature_names": [
+  "RoundShape",
+  "OvalShape",
+  "LobularShape",
+  "IrregularShape",
+  "CircumscribedMargin",
+  "MicrolobulatedMargin",
+  "ObscuredMargin",
+  "IllDefinedMargin",
+  "SpiculatedMargin",
+  "Age_lt_30",
+  "Age_geq_45",
+  "Age_geq_60",
+  "Density_geq_2"
+ ],
+ "features_present": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  7,
+  8,
+  10,
+  11,
+  12
+ ],
+ "feature_thresholds": {
+  "1": [
+   0.5
+  ],
+  "2": [
+   0.5
+  ],
+  "3": [
+   0.5
+  ],
+  "4": [
+   0.5
+  ],
+  "5": [
+   0.5
+  ],
+  "7": [
+   0.5
+  ],
+  "8": [
+   0.5
+  ],
+  "10": [
+   0.5
+  ],
+  "11": [
+   0.5
+  ],
+  "12": [
+   0.5
+  ]
+ },
+ "nodes": [
+  {
+   "id": "n0",
+   "var": "B_1_0",
+   "feature": 1,
+   "feature_name": "OvalShape",
+   "bit": 0,
+   "level": 1
+  },
+  {
+   "id": "n1",
+   "var": "B_2_0",
+   "feature": 2,
+   "feature_name": "LobularShape",
+   "bit": 0,
+   "level": 2
+  },
+  {
+   "id": "n2",
+   "var": "B_3_0",
+   "feature": 3,
+   "feature_name": "IrregularShape",
+   "bit": 0,
+   "level": 3
+  },
+  {
+   "id": "n3",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "CircumscribedMargin",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n4",
+   "var": "B_5_0",
+   "feature": 5,
+   "feature_name": "MicrolobulatedMargin",
+   "bit": 0,
+   "level": 5
+  },
+  {
+   "id": "n5",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "IllDefinedMargin",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n6",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "SpiculatedMargin",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n7",
+   "var": "B_12_0",
+   "feature": 12,
+   "feature_name": "Density_geq_2",
+   "bit": 0,
+   "level": 12
+  },
+  {
+   "id": "n8",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "Age_geq_45",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n9",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "SpiculatedMargin",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n10",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "Age_geq_45",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n11",
+   "var": "B_11_0",
+   "feature": 11,
+   "feature_name": "Age_geq_60",
+   "bit": 0,
+   "level": 11
+  },
+  {
+   "id": "n12",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "Age_geq_45",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n13",
+   "var": "B_11_0",
+   "feature": 11,
+   "feature_name": "Age_geq_60",
+   "bit": 0,
+   "level": 11
+  },
+  {
+   "id": "n14",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "IllDefinedMargin",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n15",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "SpiculatedMargin",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n16",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "CircumscribedMargin",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n17",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "IllDefinedMargin",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n18",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "SpiculatedMargin",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n19",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "Age_geq_45",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n20",
+   "var": "B_3_0",
+   "feature": 3,
+   "feature_name": "IrregularShape",
+   "bit": 0,
+   "level": 3
+  },
+  {
+   "id": "n21",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "CircumscribedMargin",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n22",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "IllDefinedMargin",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n23",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "Age_geq_45",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n24",
+   "var": "B_11_0",
+   "feature": 11,
+   "feature_name": "Age_geq_60",
+   "bit": 0,
+   "level": 11
+  },
+  {
+   "id": "n25",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "CircumscribedMargin",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n26",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "IllDefinedMargin",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n27",
+   "var": "B_2_0",
+   "feature": 2,
+   "feature_name": "LobularShape",
+   "bit": 0,
+   "level": 2
+  },
+  {
+   "id": "n28",
+   "var": "B_3_0",
+   "feature": 3,
+   "feature_name": "IrregularShape",
+   "bit": 0,
+   "level": 3
+  },
+  {
+   "id": "n29",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "CircumscribedMargin",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n30",
+   "var": "B_5_0",
+   "feature": 5,
+   "feature_name": "MicrolobulatedMargin",
+   "bit": 0,
+   "level": 5
+  },
+  {
+   "id": "n31",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "IllDefinedMargin",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n32",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "SpiculatedMargin",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n33",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "Age_geq_45",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n34",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "IllDefinedMargin",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n35",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "SpiculatedMargin",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n36",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "Age_geq_45",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n37",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "Age_geq_45",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n38",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "CircumscribedMargin",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n39",
+   "var": "B_7_0",
+   "feature": 7,
+   "feature_name": "IllDefinedMargin",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n40",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "SpiculatedMargin",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n41",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "Age_geq_45",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n42",
+   "var": "B_11_0",
+   "feature": 11,
+   "feature_name": "Age_geq_60",
+   "bit": 0,
+   "level": 11
+  },
+  {
+   "id": "n43",
+   "var": "B_12_0",
+   "feature": 12,
+   "feature_name": "Density_geq_2",
+   "bit": 0,
+   "level": 12
+  },
+  {
+   "id": "n44",
+   "var": "B_3_0",
+   "feature": 3,
+   "feature_name": "IrregularShape",
+   "bit": 0,
+   "level": 3
+  },
+  {
+   "id": "n45",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "CircumscribedMargin",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n46",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "CircumscribedMargin",
+   "bit": 0,
+   "level": 4
+  }
+ ],
+ "edges": [
+  {
+   "src": "n7",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n7",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n6",
+   "dst": "n7",
+   "branch": 0
+  },
+  {
+   "src": "n8",
+   "dst": "n7",
+   "branch": 0
+  },
+  {
+   "src": "n8",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n6",
+   "dst": "n8",
+   "branch": 1
+  },
+  {
+   "src": "n5",
+   "dst": "n6",
+   "branch": 0
+  },
+  {
+   "src": "n10",
+   "dst": "n7",
+   "branch": 0
+  },
+  {
+   "src": "n11",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n11",
+   "dst": "n7",
+   "branch": 1
+  },
+  {
+   "src": "n10",
+   "dst": "n11",
+   "branch": 1
+  },
+  {
+   "src": "n9",
+   "dst": "n10",
+   "branch": 0
+  },
+  {
+   "src": "n12",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n13",
+   "dst": "n7",
+   "branch": 0
+  },
+  {
+   "src": "n13",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n12",
+   "dst": "n13",
+   "branch": 1
+  },
+  {
+   "src": "n9",
+   "dst": "n12",
+   "branch": 1
+  },
+  {
+   "src": "n5",
+   "dst": "n9",
+   "branch": 1
+  },
+  {
+   "src": "n4",
+   "dst": "n5",
+   "branch": 0
+  },
+  {
+   "src": "n15",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n15",
+   "dst": "n8",
+   "branch": 1
+  },
+  {
+   "src": "n14",
+   "dst": "n15",
+   "branch": 0
+  },
+  {
+   "src": "n14",
+   "dst": "n12",
+   "branch": 1
+  },
+  {
+   "src": "n4",
+   "dst": "n14",
+   "branch": 1
+  },
+  {
+   "src": "n3",
+   "dst": "n4",
+   "branch": 0
+  },
+  {
+   "src": "n3",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n2",
+   "dst": "n3",
+   "branch": 0
+  },
+  {
+   "src": "n16",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n18",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n19",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n19",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n18",
+   "dst": "n19",
+   "branch": 1
+  },
+  {
+   "src": "n17",
+   "dst": "n18",
+   "branch": 0
+  },
+  {
+   "src": "n17",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n16",
+   "dst": "n17",
+   "branch": 1
+  },
+  {
+   "src": "n2",
+   "dst": "n16",
+   "branch": 1
+  },
+  {
+   "src": "n1",
+   "dst": "n2",
+   "branch": 0
+  },
+  {
+   "src": "n21",
+   "dst": "n4",
+   "branch": 0
+  },
+  {
+   "src": "n22",
+   "dst": "n18",
+   "branch": 0
+  },
+  {
+   "src": "n23",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n24",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n24",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n23",
+   "dst": "n24",
+   "branch": 1
+  },
+  {
+   "src": "n22",
+   "dst": "n23",
+   "branch": 1
+  },
+  {
+   "src": "n21",
+   "dst": "n22",
+   "branch": 1
+  },
+  {
+   "src": "n20",
+   "dst": "n21",
+   "branch": 0
+  },
+  {
+   "src": "n25",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n26",
+   "dst": "n19",
+   "branch": 0
+  },
+  {
+   "src": "n26",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n25",
+   "dst": "n26",
+   "branch": 1
+  },
+  {
+   "src": "n20",
+   "dst": "n25",
+   "branch": 1
+  },
+  {
+   "src": "n1",
+   "dst": "n20",
+   "branch": 1
+  },
+  {
+   "src": "n0",
+   "dst": "n1",
+   "branch": 0
+  },
+  {
+   "src": "n32",
+   "dst": "n11",
+   "branch": 0
+  },
+  {
+   "src": "n33",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n33",
+   "dst": "n11",
+   "branch": 1
+  },
+  {
+   "src": "n32",
+   "dst": "n33",
+   "branch": 1
+  },
+  {
+   "src": "n31",
+   "dst": "n32",
+   "branch": 0
+  },
+  {
+   "src": "n31",
+   "dst": "n11",
+   "branch": 1
+  },
+  {
+   "src": "n30",
+   "dst": "n31",
+   "branch": 0
+  },
+  {
+   "src": "n35",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n36",
+   "dst": "n11",
+   "branch": 0
+  },
+  {
+   "src": "n36",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n35",
+   "dst": "n36",
+   "branch": 1
+  },
+  {
+   "src": "n34",
+   "dst": "n35",
+   "branch": 0
+  },
+  {
+   "src": "n37",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n37",
+   "dst": "n24",
+   "branch": 1
+  },
+  {
+   "src": "n34",
+   "dst": "n37",
+   "branch": 1
+  },
+  {
+   "src": "n30",
+   "dst": "n34",
+   "branch": 1
+  },
+  {
+   "src": "n29",
+   "dst": "n30",
+   "branch": 0
+  },
+  {
+   "src": "n29",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n28",
+   "dst": "n29",
+   "branch": 0
+  },
+  {
+   "src": "n40",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n43",
+   "dst": "T",
+   "branch": 0
+  },
+  {
+   "src": "n43",
+   "dst": "F",
+   "branch": 1
+  },
+  {
+   "src": "n42",
+   "dst": "n43",
+   "branch": 0
+  },
+  {
+   "src": "n42",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n41",
+   "dst": "n42",
+   "branch": 0
+  },
+  {
+   "src": "n41",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n40",
+   "dst": "n41",
+   "branch": 1
+  },
+  {
+   "src": "n39",
+   "dst": "n40",
+   "branch": 0
+  },
+  {
+   "src": "n39",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n38",
+   "dst": "n39",
+   "branch": 0
+  },
+  {
+   "src": "n38",
+   "dst": "n17",
+   "branch": 1
+  },
+  {
+   "src": "n28",
+   "dst": "n38",
+   "branch": 1
+  },
+  {
+   "src": "n27",
+   "dst": "n28",
+   "branch": 0
+  },
+  {
+   "src": "n45",
+   "dst": "n30",
+   "branch": 0
+  },
+  {
+   "src": "n45",
+   "dst": "n22",
+   "branch": 1
+  },
+  {
+   "src": "n44",
+   "dst": "n45",
+   "branch": 0
+  },
+  {
+   "src": "n46",
+   "dst": "n39",
+   "branch": 0
+  },
+  {
+   "src": "n46",
+   "dst": "n26",
+   "branch": 1
+  },
+  {
+   "src": "n44",
+   "dst": "n46",
+   "branch": 1
+  },
+  {
+   "src": "n27",
+   "dst": "n44",
+   "branch": 1
+  },
+  {
+   "src": "n0",
+   "dst": "n27",
+   "branch": 1
+  }
+ ],
+ "root": "n0",
+ "n_levels": 13
+}

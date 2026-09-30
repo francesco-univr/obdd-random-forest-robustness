@@ -1,0 +1,10 @@
+# I .pkl sono stati salvati con scikit-learn 1.4.2 (joblib dump): NON aggiornare
+# sklearn senza ri-validare il caricamento dei 54 modelli.
+scikit-learn==1.4.2
+numpy<2
+scipy<1.14
+pandas<2.3
+matplotlib>=3.9
+joblib
+dd==0.6.0
+pytest

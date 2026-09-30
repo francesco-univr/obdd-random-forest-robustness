@@ -1,0 +1,788 @@
+{
+ "title": "spect \u2014 Win_0 (k=3)",
+ "subtitle": "39 nodi | regione certificata della classe 0",
+ "feature_names": [
+  "F1",
+  "F2",
+  "F3",
+  "F4",
+  "F5",
+  "F6",
+  "F7",
+  "F8",
+  "F9",
+  "F10",
+  "F11",
+  "F12",
+  "F13",
+  "F14",
+  "F15",
+  "F16",
+  "F17",
+  "F18",
+  "F19",
+  "F20",
+  "F21",
+  "F22"
+ ],
+ "features_present": [
+  1,
+  3,
+  4,
+  8,
+  9,
+  10,
+  12,
+  15,
+  18,
+  19,
+  20,
+  21
+ ],
+ "feature_thresholds": {
+  "1": [
+   0.5
+  ],
+  "3": [
+   0.5
+  ],
+  "4": [
+   0.5
+  ],
+  "8": [
+   0.5
+  ],
+  "9": [
+   0.5
+  ],
+  "10": [
+   0.5
+  ],
+  "12": [
+   0.5
+  ],
+  "15": [
+   0.5
+  ],
+  "18": [
+   0.5
+  ],
+  "19": [
+   0.5
+  ],
+  "20": [
+   0.5
+  ],
+  "21": [
+   0.5
+  ]
+ },
+ "nodes": [
+  {
+   "id": "n0",
+   "var": "B_1_0",
+   "feature": 1,
+   "feature_name": "F2",
+   "bit": 0,
+   "level": 1
+  },
+  {
+   "id": "n1",
+   "var": "B_3_0",
+   "feature": 3,
+   "feature_name": "F4",
+   "bit": 0,
+   "level": 3
+  },
+  {
+   "id": "n2",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "F5",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n3",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "F9",
+   "bit": 0,
+   "level": 6
+  },
+  {
+   "id": "n4",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "F10",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n5",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "F11",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n6",
+   "var": "B_12_0",
+   "feature": 12,
+   "feature_name": "F13",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n7",
+   "var": "B_15_0",
+   "feature": 15,
+   "feature_name": "F16",
+   "bit": 0,
+   "level": 13
+  },
+  {
+   "id": "n8",
+   "var": "B_18_0",
+   "feature": 18,
+   "feature_name": "F19",
+   "bit": 0,
+   "level": 15
+  },
+  {
+   "id": "n9",
+   "var": "B_19_0",
+   "feature": 19,
+   "feature_name": "F20",
+   "bit": 0,
+   "level": 16
+  },
+  {
+   "id": "n10",
+   "var": "B_21_0",
+   "feature": 21,
+   "feature_name": "F22",
+   "bit": 0,
+   "level": 18
+  },
+  {
+   "id": "n11",
+   "var": "B_19_0",
+   "feature": 19,
+   "feature_name": "F20",
+   "bit": 0,
+   "level": 16
+  },
+  {
+   "id": "n12",
+   "var": "B_20_0",
+   "feature": 20,
+   "feature_name": "F21",
+   "bit": 0,
+   "level": 17
+  },
+  {
+   "id": "n13",
+   "var": "B_12_0",
+   "feature": 12,
+   "feature_name": "F13",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n14",
+   "var": "B_15_0",
+   "feature": 15,
+   "feature_name": "F16",
+   "bit": 0,
+   "level": 13
+  },
+  {
+   "id": "n15",
+   "var": "B_18_0",
+   "feature": 18,
+   "feature_name": "F19",
+   "bit": 0,
+   "level": 15
+  },
+  {
+   "id": "n16",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "F10",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n17",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "F11",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n18",
+   "var": "B_12_0",
+   "feature": 12,
+   "feature_name": "F13",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n19",
+   "var": "B_15_0",
+   "feature": 15,
+   "feature_name": "F16",
+   "bit": 0,
+   "level": 13
+  },
+  {
+   "id": "n20",
+   "var": "B_12_0",
+   "feature": 12,
+   "feature_name": "F13",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n21",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "F9",
+   "bit": 0,
+   "level": 6
+  },
+  {
+   "id": "n22",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "F10",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n23",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "F10",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n24",
+   "var": "B_3_0",
+   "feature": 3,
+   "feature_name": "F4",
+   "bit": 0,
+   "level": 3
+  },
+  {
+   "id": "n25",
+   "var": "B_4_0",
+   "feature": 4,
+   "feature_name": "F5",
+   "bit": 0,
+   "level": 4
+  },
+  {
+   "id": "n26",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "F9",
+   "bit": 0,
+   "level": 6
+  },
+  {
+   "id": "n27",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "F10",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n28",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "F11",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n29",
+   "var": "B_12_0",
+   "feature": 12,
+   "feature_name": "F13",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n30",
+   "var": "B_15_0",
+   "feature": 15,
+   "feature_name": "F16",
+   "bit": 0,
+   "level": 13
+  },
+  {
+   "id": "n31",
+   "var": "B_18_0",
+   "feature": 18,
+   "feature_name": "F19",
+   "bit": 0,
+   "level": 15
+  },
+  {
+   "id": "n32",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "F10",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n33",
+   "var": "B_10_0",
+   "feature": 10,
+   "feature_name": "F11",
+   "bit": 0,
+   "level": 8
+  },
+  {
+   "id": "n34",
+   "var": "B_12_0",
+   "feature": 12,
+   "feature_name": "F13",
+   "bit": 0,
+   "level": 10
+  },
+  {
+   "id": "n35",
+   "var": "B_15_0",
+   "feature": 15,
+   "feature_name": "F16",
+   "bit": 0,
+   "level": 13
+  },
+  {
+   "id": "n36",
+   "var": "B_8_0",
+   "feature": 8,
+   "feature_name": "F9",
+   "bit": 0,
+   "level": 6
+  },
+  {
+   "id": "n37",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "F10",
+   "bit": 0,
+   "level": 7
+  },
+  {
+   "id": "n38",
+   "var": "B_9_0",
+   "feature": 9,
+   "feature_name": "F10",
+   "bit": 0,
+   "level": 7
+  }
+ ],
+ "edges": [
+  {
+   "src": "n10",
+   "dst": "F",
+   "branch": 0
+  },
+  {
+   "src": "n10",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n9",
+   "dst": "n10",
+   "branch": 0
+  },
+  {
+   "src": "n9",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n8",
+   "dst": "n9",
+   "branch": 0
+  },
+  {
+   "src": "n12",
+   "dst": "n10",
+   "branch": 0
+  },
+  {
+   "src": "n12",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n11",
+   "dst": "n12",
+   "branch": 0
+  },
+  {
+   "src": "n11",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n8",
+   "dst": "n11",
+   "branch": 1
+  },
+  {
+   "src": "n7",
+   "dst": "n8",
+   "branch": 0
+  },
+  {
+   "src": "n7",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n6",
+   "dst": "n7",
+   "branch": 0
+  },
+  {
+   "src": "n6",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n5",
+   "dst": "n6",
+   "branch": 0
+  },
+  {
+   "src": "n15",
+   "dst": "n11",
+   "branch": 0
+  },
+  {
+   "src": "n15",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n14",
+   "dst": "n15",
+   "branch": 0
+  },
+  {
+   "src": "n14",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n13",
+   "dst": "n14",
+   "branch": 0
+  },
+  {
+   "src": "n13",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n5",
+   "dst": "n13",
+   "branch": 1
+  },
+  {
+   "src": "n4",
+   "dst": "n5",
+   "branch": 0
+  },
+  {
+   "src": "n4",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n3",
+   "dst": "n4",
+   "branch": 0
+  },
+  {
+   "src": "n19",
+   "dst": "n10",
+   "branch": 0
+  },
+  {
+   "src": "n19",
+   "dst": "n11",
+   "branch": 1
+  },
+  {
+   "src": "n18",
+   "dst": "n19",
+   "branch": 0
+  },
+  {
+   "src": "n18",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n17",
+   "dst": "n18",
+   "branch": 0
+  },
+  {
+   "src": "n20",
+   "dst": "n11",
+   "branch": 0
+  },
+  {
+   "src": "n20",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n17",
+   "dst": "n20",
+   "branch": 1
+  },
+  {
+   "src": "n16",
+   "dst": "n17",
+   "branch": 0
+  },
+  {
+   "src": "n16",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n3",
+   "dst": "n16",
+   "branch": 1
+  },
+  {
+   "src": "n2",
+   "dst": "n3",
+   "branch": 0
+  },
+  {
+   "src": "n22",
+   "dst": "n6",
+   "branch": 0
+  },
+  {
+   "src": "n22",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n21",
+   "dst": "n22",
+   "branch": 0
+  },
+  {
+   "src": "n23",
+   "dst": "n18",
+   "branch": 0
+  },
+  {
+   "src": "n23",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n21",
+   "dst": "n23",
+   "branch": 1
+  },
+  {
+   "src": "n2",
+   "dst": "n21",
+   "branch": 1
+  },
+  {
+   "src": "n1",
+   "dst": "n2",
+   "branch": 0
+  },
+  {
+   "src": "n1",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n0",
+   "dst": "n1",
+   "branch": 0
+  },
+  {
+   "src": "n31",
+   "dst": "n9",
+   "branch": 0
+  },
+  {
+   "src": "n31",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n30",
+   "dst": "n31",
+   "branch": 0
+  },
+  {
+   "src": "n30",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n29",
+   "dst": "n30",
+   "branch": 0
+  },
+  {
+   "src": "n29",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n28",
+   "dst": "n29",
+   "branch": 0
+  },
+  {
+   "src": "n28",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n27",
+   "dst": "n28",
+   "branch": 0
+  },
+  {
+   "src": "n27",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n26",
+   "dst": "n27",
+   "branch": 0
+  },
+  {
+   "src": "n35",
+   "dst": "n10",
+   "branch": 0
+  },
+  {
+   "src": "n35",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n34",
+   "dst": "n35",
+   "branch": 0
+  },
+  {
+   "src": "n34",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n33",
+   "dst": "n34",
+   "branch": 0
+  },
+  {
+   "src": "n33",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n32",
+   "dst": "n33",
+   "branch": 0
+  },
+  {
+   "src": "n32",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n26",
+   "dst": "n32",
+   "branch": 1
+  },
+  {
+   "src": "n25",
+   "dst": "n26",
+   "branch": 0
+  },
+  {
+   "src": "n37",
+   "dst": "n29",
+   "branch": 0
+  },
+  {
+   "src": "n37",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n36",
+   "dst": "n37",
+   "branch": 0
+  },
+  {
+   "src": "n38",
+   "dst": "n34",
+   "branch": 0
+  },
+  {
+   "src": "n38",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n36",
+   "dst": "n38",
+   "branch": 1
+  },
+  {
+   "src": "n25",
+   "dst": "n36",
+   "branch": 1
+  },
+  {
+   "src": "n24",
+   "dst": "n25",
+   "branch": 0
+  },
+  {
+   "src": "n24",
+   "dst": "T",
+   "branch": 1
+  },
+  {
+   "src": "n0",
+   "dst": "n24",
+   "branch": 1
+  }
+ ],
+ "root": "n0",
+ "n_levels": 19
+}

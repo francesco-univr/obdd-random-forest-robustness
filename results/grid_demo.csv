@@ -1,0 +1,13 @@
+dataset,n_trees,n_trees_full,budget,selector,backend,completed,error,n_input_bits,peak_nodes,n_leaves,runtime_s
+iris,5,26,10000,modal_var,autoref,True,,11,75,1,0.047
+iris,10,26,10000,modal_var,autoref,True,,12,292,1,0.219
+iris,26,26,10000,modal_var,autoref,True,,16,1312,1,1.375
+iris,5,26,10000,infogain,autoref,True,,11,75,1,0.047
+iris,10,26,10000,infogain,autoref,True,,12,292,1,0.218
+iris,26,26,10000,infogain,autoref,True,,16,1312,1,1.36
+banknote,5,44,10000,modal_var,autoref,True,,21,979,1,0.063
+banknote,10,44,10000,modal_var,autoref,True,,26,8013,1,0.406
+banknote,44,44,10000,modal_var,autoref,False,manager a 5012224 nodi > 5000000,32,,,15.172
+banknote,5,44,10000,infogain,autoref,True,,21,979,1,0.062
+banknote,10,44,10000,infogain,autoref,True,,26,8013,1,0.406
+banknote,44,44,10000,infogain,autoref,False,manager a 5006168 nodi > 5000000,32,,,20.985
